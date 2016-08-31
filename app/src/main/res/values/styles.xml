@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">#8b0000</item>
+         <item name="colorPrimary">#8b0000</item>
+    </style>
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">#8b0000</item>
+    </style>
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="colorAccent">#ff0000</item>
+    <item name="android:textColorPrimary">#FFFFFF</item>
+    <item name="android:background">#3b3b3b</item>
+
+    </style>
+  
+
+</resources>

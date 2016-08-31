@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<title></title>
+
+
+  </head>
+  <body><span style="line-height: 1.5;">
+
+	<div style="text-align: center; font-weight: bold; color: rgb(204, 0, 0);"><big><big><big>Замена
+			системных файлов</big><br>
+
+		</big></big>
+	  <div style="text-align: left;"><span style="color: rgb(0, 0, 0); font-weight: normal;"><span style="color: rgb(255, 255, 255);">В данной
+			инструкции я расскажу Вам, как изменять системные файлы Android. Эта
+			инструкция пригодится при установке модов, твиков, дополнений для
+			Android OS.</span><br>
+
+		  <big style="color: red;"><big style="font-weight: bold;">Требования: </big></big><br>
+		  <span style="color: rgb(255, 255, 255);">
+			- Наличие Root прав</span><br>
+
+		  <big style="color: red;"><big><span style="font-weight: bold;">Подготовка:</span></big></big><br>
+		  <span style="color: rgb(255, 255, 255);">
+			- Скачайте и установите приложение </span><a style="color: red;" href="https://play.google.com/store/apps/details?id=com.speedsoftware.rootexplorer">Root
+			Exploler</a><br>
+
+		  <br>
+		  <span style="font-weight: bold; color: rgb(0, 153, 0);">
+			1)</span> <span style="color: rgb(255, 255, 255);">Убедитесь, что у Вас присутствуют Root права, и установлен Root
+			Exploler. </span></span><span style="color: rgb(0, 0, 0); font-weight: normal;"><br>
+		  <span style="font-weight: bold; color: rgb(0, 153, 0);">
+			2)</span> <span style="color: rgb(255, 255, 255);">Открываем программу Root Exploler, нажимаем вверху на кнопку "Права
+			R/W", при запросе программой прав суперпользователя- предоставляем их.</span><br>
+		  <span style="font-weight: bold; color: rgb(0, 153, 0);">
+			3)</span><span style="color: rgb(255, 255, 255);"> Собственно, теперь находим нужный системный файл, долго тапаем по нему, открывается&nbsp;меню. Там находим пункт
+			"Разрешения", открываем его, и запоминаем расположение галочек.
+			Заменяем этот системный файл на свой, и выставлем разрешения как у
+			старого файла. Если этого не сделать- замена не сработает.</span><br>
+
+		  <br>
+
+		  <big style="color: rgb(0, 153, 0);"><big><span style="font-weight: bold;">Структура файловой системы Android</span></big></big><br>
+		  <span style="color: rgb(255, 255, 255);">
+			Структура имеет древовидный вид. У любого дерева имеется корень, в
+			Android он также существуют. Корень &mdash; это отправной пункт в
+			файловой структуре, с корня система обрастает папками и файлами. Корень
+			в Android отмечается как знак /</span></span>
+		<hr style="width: 100%; height: 2px;"><span style="color: rgb(0, 0, 0); font-weight: normal;"><big style="color: rgb(204, 51, 204);"><big style="font-weight: bold;">/system/</big></big><br>
+		  <span style="color: rgb(255, 255, 255);">
+			- находится в корне памяти устройства, содержит в себе много вложенных
+			папок, отвечает за работу установленной операционной системы.</span><br style="color: rgb(255, 255, 255);">
+		<div class="spoil" style="line-height: 1.5;">
+		  <div class="smallfont" align="center"><input style="width: 300px; height: 60px; background-color:#8b0000;color:white;" value="Вложенные папки" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Вложенные папки'; }
+			  else
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Вложенные папки'; }" type="button"> </div>
+
+		  <div class="alt2">
+			<div style="display: none;"><span style="font-weight: normal; color: rgb(0, 0, 0);"><span style="color: rgb(204, 51, 204); font-weight: bold;">/system/app/</span>
+				<span style="color: rgb(255, 255, 255);">- здесь находятся системные приложения и сервисы (в новых ОС Android
+				  сервисные приложения вынесли в другую папку priv-app)
+				</span></span><br style="font-weight: normal; color: rgb(0, 0, 0);">
+
+			  <span style="font-weight: normal; color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(204, 51, 204);">/system/bin/</span>
+				<span style="color: rgb(255, 255, 255);">и</span> <span style="color: rgb(204, 51, 204); font-weight: bold;">/system/xbin/</span><span style="color: rgb(255, 255, 255);">
+				  - папки содержат файлы и ссылки на исполняемые бинарные файлы.</span></span><br style="font-weight: normal; color: rgb(0, 0, 0);">
+
+			  <span style="font-weight: normal; color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(204, 51, 204);">/system/etc/</span><span style="color: rgb(255, 255, 255);">
+				  - в данной папке находятся конфигурационные файлы необходимые при
+				  загрузке ОС а также необходимые в процессе работы различных программ
+				</span></span><br style="font-weight: normal; color: rgb(0, 0, 0);">
+
+			  <span style="font-weight: normal; color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(204, 51, 204);">/system/fonts/</span><span style="color: rgb(255, 255, 255);">
+				  - папка с системными шрифтами</span></span><br style="font-weight: normal; color: rgb(0, 0, 0);">
+
+			  <span style="font-weight: normal; color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(204, 51, 204);">/system/framework/</span>
+				<span style="color: rgb(255, 255, 255);">- папка с фрэймами Android. Это основная папка, отвечающая за работу системы.</span></span><br style="font-weight: normal; color: rgb(0, 0, 0);">
+
+			  <span style="font-weight: normal; color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(204, 51, 204);">/system/lib/</span><span style="color: rgb(255, 255, 255);">
+				  - библиотеки системных приложений и сервисов</span></span><br style="font-weight: normal; color: rgb(0, 0, 0);">
+
+			  <span style="font-weight: normal; color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(204, 51, 204);">/system/media/</span>
+				<span style="color: rgb(255, 255, 255);">- папка с системными звуками и анимацией включения
+				</span></span><br style="font-weight: normal; color: rgb(0, 0, 0);">
+
+			  <span style="font-weight: normal; color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(204, 51, 204);">/system/priv-app/</span><span style="color: rgb(255, 255, 255);">
+				  - папка с сервисами Android (Есть только в Android 4.4+)</span></span><br style="font-weight: normal; color: rgb(0, 0, 0);">
+
+			  <span style="font-weight: normal; color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(204, 51, 204);">/system/tts/</span><span style="color: rgb(255, 255, 255);">
+				  - папка с голосовыми движками системы</span></span><br style="font-weight: normal; color: rgb(0, 0, 0);">
+
+			  <span style="font-weight: normal; color: rgb(0, 0, 0);"><span style="font-weight: bold; color: rgb(204, 51, 204);">/system/build.prop</span>
+				<span style="color: rgb(255, 255, 255);">- конфигурационный файл с помощью которого можно изменить системные
+				  настройки
+				</span></span></div>
+
+			<hr style="width: 100%; height: 2px;"></div>
+
+		  <span style="color: rgb(0, 0, 0); font-weight: normal;"></span>
+		  <div style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><big style="color: rgb(204, 51, 204); font-weight: bold;"><big>/proc/</big></big><br>
+			<span style="color: rgb(255, 255, 255);">
+			  - виртуальный раздел, содержащий информацию о ядре и его конфигурации</span><br>
+
+			<hr style="width: 100%; height: 2px;"></div>
+
+		  <div style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><big style="color: rgb(204, 51, 204);"><big><span style="font-weight: bold;">/mnt/</span></big></big><br>
+			<span style="color: rgb(255, 255, 255);">
+			  -&nbsp; в данный раздел монтируются карта памяти,
+			  внутренняя память и другие виртуальные разделы (также в новых версиях Android 
+			  можно встретить раздел storage)</span><br>
+
+			<hr style="width: 100%; height: 2px;"></div>
+
+		  <div style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><big><big><span style="color: rgb(204, 51, 204); font-weight: bold;">/storage/</span></big></big><br>
+			<span style="color: rgb(255, 255, 255);">
+			  - в данный раздел монтируются только реальные (существующие, тоесть не
+			  виртуальные) &nbsp;карты памяти и внутренняя память</span><br>
+
+			<hr style="width: 100%; height: 2px;">
+			<div style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><big style="color: rgb(204, 51, 204);"><big><span style="font-weight: bold;">/cache/</span></big></big>
+			  <br>
+			  <span style="color: rgb(255, 255, 255);">
+				- в данном разделе находятся временные файлы, сюда скачиваются
+				обновления системы.</span><br>
+
+			  <hr style="width: 100%; height: 2px;"></div>
+
+			<div style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><big style="color: rgb(204, 51, 204);"><big><span style="font-weight: bold;">/dev/</span></big></big><br>
+			  <span style="color: rgb(255, 255, 255);">
+				- в данном разделе содержится информация о устройствах системы и файлов</span><br>
+
+			  <hr style="width: 100%; height: 2px;"></div>
+
+			<div style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><big><big><span style="font-weight: bold; color: rgb(204, 51, 204);">/data/ </span></big></big><br>
+			  <span style="color: rgb(255, 255, 255);">
+				- пользовательский раздел, в котором находятся установленные приложения,
+				личные настройки</span><br>
+			  <div class="spoil" style="line-height: 1.5;">
+				<div class="smallfont" align="center"><input style="width: 300px; height: 60px; background-color:#8b0000;color:white;" value="Вложенные папки" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+					{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Вложенные папки'; }
+					else
+					{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Вложенные папки'; }" type="button"> </div>
+
+				<div class="alt2">
+				  <div style="display: none;">
+					<span style="font-weight: bold; color: rgb(204, 51, 204);">/data/app/</span><span style="color: rgb(255, 255, 255);"> - здесь находятся установленные приложения, игры</span><br>
+					<span style="font-weight: bold; color: rgb(204, 51, 204);">/data/app-lib/</span> <span style="color: rgb(255, 255, 255);">- дополнительные библиотеки необходимые для работы определенных приложений (присутствует в новых версиях Android)</span><br>
+					<span style="font-weight: bold; color: rgb(204, 51, 204);">/data/dalvik-cache/</span><span style="color: rgb(255, 255, 255);"> - кеш-память для работы Java машины Dalvik, которая отвечает за запуск и работу приложений.</span><br>
+					<span style="font-weight: bold; color: rgb(204, 51, 204);">/data/data/</span> <span style="color: rgb(255, 255, 255);">- в данной папке находятся&nbsp; индивидуальные настройки каждого
+					  пользовательского приложения, библиотеки, и другие файлы</span><br>
+					<span style="font-weight: bold; color: rgb(204, 51, 204);">/data/system/</span> <span style="color: rgb(255, 255, 255);">- в данном разделе находятся настройки системных приложений</span></div>
+				</div>
+
+				<hr style="width: 100%; height: 2px;"></div>
+
+			  <div style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><big style="color: rgb(204, 51, 204);"><big><span style="font-weight: bold;">/efs/</span></big></big>
+				<br>
+				<span style="color: rgb(255, 255, 255);">
+				  - в этом разделе находятся файлы и папки, отвечающие за IMEI</span><br>
+
+				<hr style="width: 100%; height: 2px;"></div>
+
+			  <div style="color: rgb(0, 0, 0); font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 1.5; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;"><big style="color: rgb(204, 51, 204);"><big><span style="font-weight: bold;">/preload/</span></big></big>
+				<br>
+				<span style="color: rgb(255, 255, 255);">
+				  - в данном разделе находятся дополнительные файлы и папки, которые
+				  зеркалируются в раздел /system/ </span><br>
+
+				<hr style="width: 100%; height: 2px;"></div>
+
+			</div>
+
+			<span style="color: rgb(0, 0, 0); font-weight: normal;"></span>
+		  </div>
+
+		</div>
+
+	  </div>
+
+	</div>
+	</span></body>
+</html>

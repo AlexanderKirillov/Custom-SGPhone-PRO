@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+  </head>
+  <body><font color=white>
+	  <h4 style="line-height: 1.5; text-align: center;"><font color="#ff0000" size="5">Перепрошивка через Mobile
+		  Odin</font><br>
+	  </h4>
+	  <div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><b>Mobile Odin</b>- это программа для
+		  смартфонов и планшетов от компании Samsung, позволяющая перепрошиться
+		  без участия компьютера. Является полнофункциональным аналогом PC версии 
+		  программы Odin (Правда, мобильная версия не прошивает бутлоадер, но это не критично).</font></div>
+<div style="line-height: 1.5;">
+		  Для некоторых пользователей программа Mobile Odin является самым удобным способом
+		  прошивки девайсов компании Samsung</div>
+
+	  <div style="line-height: 1.5; font-family: Trebuchet MS;"><font color="#339966" size="3"><b>Для
+			функционирования программы необходимы права root пользователя.</b></font></div>
+
+	  <hr style="line-height: 1.5;">
+	  <div class="spoil" style="line-height: 1.5;">
+		<div class="smallfont" align="center"><input style="width: 300px; height: 60px; background-color:#8b0000;color:white;" value="Поддерживаемые устройства" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Поддерживаемые устройства'; }
+			else
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Поддерживаемые устройства'; }" type="button"> </div>
+
+		<div class="alt2">
+		  <div style="display: none;">
+			<div style="font-family: Trebuchet MS;"><font size="3">Программа
+				Mobile Odin официально поддерживает следующие устройства:&nbsp;</font></div>
+
+			<div><font style="font-family: Trebuchet MS;" size="3">	<div><font size="3"><b>Galaxy S:</b></font></div><div><font size="3">- GT-I9000/B/M</font></div>
+				<div><font size="3">- GT-I9003/L</font></div>
+				<div><font size="3">- AT&amp;T/Rogers Captivate SGH-I896/I897</font></div>
+				<div><font size="3"><b>Galaxy S2:</b></font></div>
+				<div><font size="3">- GT-I9100/T/G/M</font></div>
+				<div><font size="3">- SHW-M250S/K</font></div>
+				<div><font size="3">- SC-02C</font></div>
+				<div><font size="3">- AT&amp;T SGH-I777</font></div>
+				<div><font size="3">- Sprint/Virgin/Boost Epic 4G Touch SPH-D710/VMUB/BST</font></div>
+				<div><font size="3">- USCC SCH-R760</font></div>
+				<div><font size="3"><b>Galaxy S3:</b></font></div>
+				<div><font size="3">- GT-I9300/T</font></div>
+				<div><font size="3">- GT-I9308</font></div>
+				<div><font size="3">- LTE SHV-E210S</font></div>
+				<div><font size="3">- LTE GT-I9305/T/N</font></div>
+				<div><font size="3">- AT&amp;T/Canadia SGH-I747/M</font></div>
+				<div><font size="3">- TMOUS SGH-T999</font></div>
+				<div><font size="3">- Sprint/C-Spire SPH/SCH-L710</font></div>
+				<div><font size="3">- VZW SCH-I535 (unlock bootloader !)</font></div>
+				<div><font size="3">- USCC/Cricket/MetroPCS Galaxy S3 SCH-R530/U/M/C</font></div>
+				<div><font size="3"><b>Galaxy S4:</b></font></div>
+				<div><font size="3">- LTE GT-I9505</font></div>
+				<div><font size="3">- Sprint SPH-L720</font></div>
+				<div><font size="3">- TMOUS SGH-M919</font></div>
+				<div><font size="3">- USCC SCH-R970</font></div>
+				<div><font size="3">- Canadia SGH-I337M</font></div>
+				<div><font size="3"><b>Galaxy S5:</b></font></div>
+				<div><font size="3">- LTE SM-G900F</font></div>
+				<div><font size="3">- Oceania SM-G900I</font></div>
+				<div><font size="3">- Korea SM-G900L</font></div>
+				<div><font size="3">- Americas SM-G900M</font></div>
+				<div><font size="3">- Sprint SM-G900P</font></div>
+				<div><font size="3">- USCC SM-G900R4</font></div>
+				<div><font size="3">- TMOUS SM-G900T</font></div>
+				<div><font size="3">- Metro SM-G900T1</font></div>
+				<div><font size="3">- Canadia SM-G900W8</font></div>
+				<div><font size="3"><b>Google Galaxy Nexus:</b></font></div>
+				<div><font size="3">- GSM Maguro/Yakju/GT-I9250</font></div>
+				<div><font size="3">- CDMA/LTE Toro/Mysid/SCH-I515 (no cdma radio flashing)</font></div>
+				<div><font size="3"><b>Galaxy Note:</b></font></div>
+				<div><font size="3">- GT-N7000/B</font></div>
+				<div><font size="3">- GT-I9220</font></div>
+				<div><font size="3"><b>Galaxy Note 2:</b></font></div>
+				<div><font size="3">- GT-N7100</font></div>
+				<div><font size="3">- LTE GT-N7105</font></div>
+				<div><font size="3">- AT&amp;T/Canadia SGH-I317/M</font></div>
+				<div><font size="3">- TMOUS SGH-T889</font></div>
+				<div><font size="3">- Sprint SPH-L900</font></div>
+				<div><font size="3">- VZW SCH-I605 (unlock bootloader !)</font></div>
+				<div><font size="3">- USCC SCH-R950</font></div>
+				<div><font size="3"><b>Galaxy Note 3:</b></font></div>
+				<div><font size="3">- SM-N9005</font></div>
+				<div><font size="3">- Sprint SM-N900P</font></div>
+				<div><font size="3">- TMOUS SM-N900T</font></div>
+				<div><font size="3">- USCC SM-N900R4</font></div>
+				<div><font size="3">- Canadia SM-N900W8</font></div>
+				<div><font size="3"><b>Galaxy Note "8.0":</b></font></div>
+				<div><font size="3">- 3G GT-N5100</font></div>
+				<div><font size="3">- Wi-Fi GT-N5110/N5113</font></div>
+				<div><font size="3">- LTE GT-N5120</font></div>
+				<div><font size="3"><b>Galaxy Note "10.1":</b></font></div>
+				<div><font size="3">- 3G GT-N8000&nbsp;</font></div>
+				<div><font size="3">- Wi-Fi GT-N8010/N8013&nbsp;</font></div>
+				<div><font size="3">- LTE GT-N8020</font></div>
+				<div><font size="3"><b>Galaxy Tab:</b></font></div>
+				<div><font size="3">- Tab 7" GT-P1000</font></div>
+				<div><font size="3">- Tab 7.0 Plus GT-P6200/L, GT-P6210</font></div>
+				<div><font size="3">- Tab 7.7" GT-P6800, GT-P6810</font></div>
+				<div><font size="3">- Tab 10.1" GT-P7500, GT-P7510</font></div>
+				<div><font size="3">- Tab 2 7" GT-P3100, GT-P3110, GT-P3113</font></div>
+				<div><font size="3">- Tab 2 10" GT-P5100, GT-P5110, GT-P5113</font></div>
+				<div><font size="3"><b>Galaxy 5:</b></font></div>
+				<div><font size="3">- GT-I5500/B/L/T/M</font></div>
+				<div><font size="3">- GT-I5503/T</font></div>
+				<div><font size="3">- GT-I5508</font></div>
+			</div>
+
+		  </div>
+
+		</div>
+
+	  </div>
+
+	  <hr style="line-height: 1.5;">
+	  <div class="spoil">
+		<div class="smallfont" style="line-height: 1.5;" align="center"><input style="width: 300px; height: 60px; background-color:#8b0000;color:white;" value="Прошивка однофайловой прошивки" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Прошивка однофайловой прошивки'; }
+			else
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Прошивка однофайловой прошивки'; }" type="button"> </div>
+
+		<div class="alt2">
+		  <div style="display: none;">
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">1)</span>
+				Скачиваем любую <b>однофайловую</b> прошивку (Формат
+				прошивки- .tar или .tar.md5</font>)<br>
+
+			  <font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">2)</span>
+				Закидываем на телефон файл прошивки формата .tar или .tar.md5 (Он
+				находится в архиве со скачанной ранее прошивкой (П.1), желательно
+				положить данный файл в одну папку на смартфоне, назовём её "Firmware"
+				без кавычек и расположим в корневой директории накопителя или карты
+				памяти)</font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">3)</span>
+				Скачиваем и устанавливаем программу <a href="https://play.google.com/store/apps/details?id=eu.chainfire.mobileodin.pro" target=""><font color="red">Mobile Odin Pro</font></a>
+			  </font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3">После открытия программы, она доустанавливает еще одно
+				.apk в зависимости от вашего устройства.<br>
+
+				Если у вас не скачивается дополнительный файл, установите его вручную,
+				версию для вашего девайса брать на XDA.</font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">3)</span>
+				Открываем Mobile Odin Pro&nbsp;</font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">4)</span>
+				В Mobile Odin Pro выбираем пункт Open file ...</font></div>
+
+
+			<div style="font-family: Trebuchet MS;"><font size="3"><span style="line-height: 24px;">
+				  <p><img src="Open.png"></p>
+				</span></font><font size="3"><span style="line-height: 24px;"><span style="font-weight: bold; color: rgb(0, 153, 0);">5)</span>
+				  Выбираем тип памяти, из которого программа будет считывать нашу
+				  прошивку (Выбираем тот тип памяти, куда заливали прошивку в П.2).</span></font></div>
+
+			<div style="font-family: Trebuchet MS;"><font size="3"><span style="line-height: 24px;"><p><img src="Memory.png"></p></span></font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">6)</span>
+				В появившемся окне выбираем ранее записанный файл формата .tar или
+				.tar.md5 (Который мы записывали в созданную нами папку "Firmware" в
+				пункте 2. Его содержимое подставляется в соответствующие разделы
+				программы )</font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><p><img src="OKF.png"></p></font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">7)</span>
+				Наимаем клавишу подтверждения "ОК".</font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><p><img src="PART.png"></p></font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">8)</span>
+				Проверяем,&nbsp;во всех ли разделах есть данные</font>.</div>
+
+			<div style="font-family: Trebuchet MS;"><font style="line-height: 1.5;" size="3"><font color="#ff0000">*</font><span style="color: rgb(0, 153, 0); font-weight: bold;">9)</span>
+				<font style="font-weight: bold;" color="#ff0000">ОПЦИОНАЛЬНО</font>.
+				<br>
+
+			  </font><font size="3">Если хотите, чтобы в прошивке
+				сохранились Root права&nbsp;и остался Mobile Odin,</font> с<font size="3">тавите галки в программе на:</font></div>
+
+			<font style="font-family: Trebuchet MS;" size="3">-
+			  Enable EverRoot<br>
+
+			  - Inject Superuser (SuperSU)<br>
+
+			</font>
+			<div style="font-family: Trebuchet MS;"><font size="3">-
+				Inject Mobile ODIN.</font></div>
+
+			<div style="font-family: Trebuchet MS;"><font size="3"><p><img src="TT.png"></p></font></div>
+
+			<div style="font-family: Trebuchet MS;"><font style="line-height: 1.5;" size="3"><font color="#ff0000">*</font><span style="font-weight: bold; color: rgb(0, 153, 0);">10)</span>
+				<font style="font-weight: bold;" color="#ff0000">ОПЦИОНАЛЬНО</font>.
+				Сброс данных</font><font size="3"><span style="line-height: 24px;">- по желанию. </span></font><font size="3"><span style="line-height: 24px;">Если
+				  хотите полностью отформатировать систему - выбираете пункты Wipe data
+				  and cache и Wipe Dalvik Cache. </span></font><font size="3"><span style="line-height: 24px;"><br>
+
+				  Если же хотите,
+				  чтобы все установленные программы и ваши данные сохранились- не
+				  выбирайте эти пункты!</span></font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><p><img src="WIPE.png"></p></font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3">11) Нажимаем на кнопку&nbsp;Flash firmware.</font></div>
+
+			<div style="font-family: Trebuchet MS;"><font size="3"><span style="line-height: 24px;"><p><img src="Flash.png"></p></span></font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3">12) Ожидаем, прошивка аппарата может занять более
+				10-ти минут.</font></div>
+
+			<div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3">Во время прошивки аппарата может появиться надпись
+				с просьбой о перезагрузке, не стоит пугаться, просто нажмите
+				центральную кнопку на вашем аппарате.</font><br>
+
+			  После перезагрузки получаем прошитый аппарат!</div>
+
+			<ul style="line-height: 1.5;">
+
+			  <li style="font-family: Trebuchet MS;"><a href="http://4pda.ru/forum/index.php?showtopic=283234&amp;st=360#entry21718197" target=""><font color="white" size="3">Инструкция
+					по оживлению аппарата, если он ушел в циклический ребут</font></a></li>
+
+			  <li><font style="font-family: Trebuchet MS;" size="3"><a href="http://4pda.ru/forum/index.php?showtopic=283234&amp;st=140#entry12773639" target=""><font color="white">Инструкция по
+					  оживлению аппарата, если возникают проблемы на SGS2</font></a></font></li>
+
+			</ul>
+
+		  </div>
+
+		</div>
+
+	  </div>
+
+	  <hr style="line-height: 1.5;">
+	  <div class="spoil" style="line-height: 1.5;">
+		<div class="smallfont" align="center"><input style="width: 300px; height: 60px; background-color:#8b0000;color:white;" value="Прошивка трехфайловой прошивки" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Прошивка трехфайловой прошивки'; }
+			else
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Прошивка трехфайловой прошивки'; }" type="button"> </div>
+
+		<div style="font-family: Trebuchet MS;" class="alt2">
+		  <div style="display: none;">
+			<div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">1)</span> Скачиваем любую <span style="font-weight: bold;">трёхфайловую</span>
+				прошивку (Она должна состоять как минимум из 3 файлов)</font></div>
+
+			<div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">2)</span> Записываем на телефон три
+				файла, которые имеют в названии слова CODE, Modem и CSC. (Желательно
+				все
+				три файла положить в одну папку на смартфоне, назовём её "Firmware" без
+				кавычек и расположим в корневой директории накопителя или карты памяти)</font></div>
+
+			<div>
+			  <div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">3)</span> Скачиваем и устанавливаем программу&nbsp;<a href="https://play.google.com/store/apps/details?id=eu.chainfire.mobileodin.pro" target=""><font color="red">Mobile Odin Pro</font></a>&nbsp;</font></div>
+
+			  <div><font size="3">После открытия программы,
+				  она доустанавливает еще одно .apk в зависимости от Вашего устройства!<br>
+
+				  Если дополнительный файл не скачивается, установите его вручную,
+				  версию для вашего девайса брать на XDA.</font></div>
+
+			</div>
+
+			<div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">4)</span> Открываем Mobile Odin Pro.</font></div>
+
+			<div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">5)</span> В Mobile Odin Pro выбрать
+				пункт Open file...&nbsp;</font><br>
+
+			  <div><font size="3"><span style="line-height: 24px;"><p><img src="Open.png"></p><br>
+				  </span></font><font size="3"><span style="line-height: 24px;"><span style="font-weight: bold; color: rgb(0, 153, 0);">6)</span>
+					Выбираем тип памяти, из которого программа будет считывать нашу
+					прошивку (Выбираем тот тип памяти, куда заливали прошивку в П.2).</span></font>
+				<div style="font-family: Trebuchet MS;"><font size="3"><span style="line-height: 24px;"><p><img src="Memory.png"></p></span></font></div>
+				<font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">7)</span> В появившемся окне выбираем
+				  файл который содержит в своём названии слово CODE который мы записывали
+				  в созданную нами папку "Firmware" (Его содержимое подставляется в
+				  соответствующие разделы программы).</font></div>
+
+			</div>
+
+
+			<div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">8)</span> Жмём клавишу подтверждения
+				"ОК".</font></div>
+
+			<div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">9)</span> Выбираем раздел Modem.</font></div>
+
+			<div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">10)</span> В появившимся окне выбираем
+				файл который содержит в своём названии слово Modem который мы
+				записывали в созданную нами папку "Firmware".</font></div>
+
+			<div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">11)</span> Жмём клавишу подтверждения
+				"ОК".</font></div>
+
+			<div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">12)</span> Проверяем что во всех
+				разделах есть данные.<br>
+			  </font>
+			  <div style="font-family: Trebuchet MS;"><font style="line-height: 1.5;" size="3"><font color="#ff0000">*</font><span style="color: rgb(0, 153, 0); font-weight: bold;">13)</span>
+				  <font style="font-weight: bold;" color="#ff0000">ОПЦИОНАЛЬНО</font>.
+				  <br>
+
+				</font><font size="3">Если хотите, чтобы в прошивке
+				  сохранились Root права&nbsp;и остался Mobile Odin,</font> с<font size="3">тавите галки в программе на:</font></div>
+
+			  <font style="font-family: Trebuchet MS;" size="3">-
+				Enable EverRoot<br>
+
+				- Inject Superuser (SuperSU)<br>
+
+			  </font>
+			  <div style="font-family: Trebuchet MS;"><font size="3">-
+				  Inject Mobile ODIN.</font></div>
+
+			  <div style="font-family: Trebuchet MS;"><font size="3"><p><img src="TT.png"></p></font></div>
+
+			  <div style="font-family: Trebuchet MS;"><font style="line-height: 1.5;" size="3"><font color="#ff0000">*</font><span style="font-weight: bold; color: rgb(0, 153, 0);">14)</span>
+				  <font style="font-weight: bold;" color="#ff0000">ОПЦИОНАЛЬНО</font>.
+				  Сброс данных</font><font size="3"><span style="line-height: 24px;">- по желанию. </span></font><font size="3"><span style="line-height: 24px;">Если
+					хотите полностью отформатировать систему - выбираете пункты Wipe data
+					and cache и Wipe Dalvik Cache. </span></font><font size="3"><span style="line-height: 24px;"><br>
+
+					Если же хотите,
+					чтобы все установленные программы и ваши данные сохранились- не
+					выбирайте эти пункты!</span></font></div>
+
+			  <div style="line-height: 1.5; font-family: Trebuchet MS;"><font size="3"><p><img src="WIPE.png"></p></font></div>
+			</div>
+
+			<div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">15)</span> Жмём кнопку Flash firmware.<br>
+			  </font>
+			  <div style="font-family: Trebuchet MS;"><font size="3"><span style="line-height: 24px;"><p><img src="Flash.png"></p></span></font></div>
+			</div>
+
+			<div><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">16)</span> Ожидаем, прошивка аппарата
+				может занять более 10-ти минут.</font></div>
+
+			<div><font size="3">Во время прошивки аппарата
+				может появиться надпись с просьбой о перезагрузке, не стоит пугаться,
+				просто нажмите центральную кнопку на вашем аппарате.</font></div>
+
+
+			<div>
+			  <ul>
+
+				<li><a href="http://4pda.ru/forum/index.php?showtopic=283234&amp;st=360#entry21718197" target=""><font color="white" size="3">Инструкция
+					  по оживлению аппарата, если он ушел в циклический ребут</font></a></li>
+
+				<li><font size="3"><a href="http://4pda.ru/forum/index.php?showtopic=283234&amp;st=140#entry12773639" target=""><font color="white">Инструкция по
+						оживлению аппарата, если возникают проблемы на SGS2</font></a></font></li>
+
+			  </ul>
+
+			  <hr></div>
+
+			<div><font size="3">Если вы хотите, можете прошить
+				ещё и файл который содержит в своём названии слово CSC, который мы
+				записывали на телефон ранее, то выполните нижелещащие пункты. <b><font color="#993300">Е</font></b><font color="#993300"><b>сли вас все устраивает можете его
+					не прошивать</b></font>.</font></div>
+
+			<div><font size="3">Так же хочу отметить что следует
+				прошивать этот файл <b>после</b> прошивания прошивки, а не
+				до прошивания прошивки.</font></div>
+
+			<div><font size="3"><b>CSC - это региональный
+				  пакет</b></font><font size="3"><br>
+
+			  </font></div>
+
+			<div><font color="red" size="4"><b>Инструкция
+				  по прошивке CSC:&nbsp;</b></font></div>
+
+
+			<div><font size="3"><font color=green><b>1)</b></font> Выбираем пункт Open file... .</font></div>
+
+			<div><font size="3"><font color=green><b>2)</b></font> В появившемся окне выбираем
+				файл который содержит в своём названии слово CSC который мы записывали
+				в созданную нами папку "Firmware. (Его содержимое подставляется в
+				соответствующие разделы программы)</font></div>
+
+			<div><font size="3"><font color=green><b>3)</b></font> Жмём клавишу подтверждения
+				"ОК".</font></div>
+
+			<div><font size="3"><font color=green><b>4)</b></font> Проверяем что в некоторых
+				пунктах программы появилась информация.</font></div>
+
+			<div><font size="3"><font color=green><b>5)</b></font> Жмём кнопку Flash firmware.</font></div>
+
+			<div><font size="3"><font color=green><b>6)</b></font> Ожидаем, прошивка файла CSC
+				может занять около 5-ти минут.</font></div>
+
+			<div><font size="3">Во время прошивки файла CSC
+				может появиться надпись с просьбой о перезагрузке, не стоит пугаться,
+				просто нажмите центральную кнопку на вашем аппарате.</font></div>
+
+			<div><font size="3">После перезагрузки у вас
+				будет прошивка которую мы прошивали ранее + региональный пакет.</font></div>
+
+		  </div>
+
+		</div>
+
+	  </div>
+
+	  <hr style="line-height: 1.5;"></font>
+  </body>
+</html>

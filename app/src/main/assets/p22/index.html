@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"></head>
+  <body><span style="line-height: 1.5;"><font color="white">
+		<h4 style="font-size: medium; text-align: center;"><font color="#ff0000" size="5"><font>Описание системных APK в прошивке</font></font></h4>
+
+		<div style="font-size: medium;">Все мы наверно задумывались, о том, что наша система захламлена программами, которые нам совершенно не нужны.&nbsp;</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;">В данной инструкции мы рассмотрим приложения из системных папок system/app и priv-app/, которые можно удалять, а какие удалять совершенно нельзя.</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;">
+
+		  <hr /></div>
+
+		<div style="font-size: medium;">
+
+		  <div><font color="#ff0000"><b>КРАСНЫЙ</b></font>- напрямую влияет на работу системы, удалить без последствий - не получится.</div>
+
+		  <div><b><font color="#339966">ЗЕЛЕНЫЙ</font></b>- не влияет на работу системы, удалить - можно (читайте описание).</div>
+
+		  <div><b><font color="#33cccc">ГОЛУБОЙ</font></b>- "Сомнительное" приложение для удаления (не на всех аппаратах удаляется без последствий для системы), лучше такое приложение оставить.</div>
+
+		  <div>
+
+			<hr /></div></div>
+
+		<h4 style="font-size: medium; text-align: center;"><font color="#ff00ff" style="font-weight: normal;"><font size=4>Список приложений</font></font></h4>
+
+		<h4 style="font-size: medium;"><font color="#ff0000">AccountAndSyncSettings.apk</font><span style="font-weight: normal;">- отвечает за синхронизацию аккаунта Google и настроек.</span></h4>
+
+		<div style="font-size: medium;"><font color="#339966"><b>AccuWeatherWidget.apk</b>- </font>Погода от Samsung</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><font color="#339966"><b>AccuWeatherWidget_Main.apk</b></font>-&nbsp;виджет погоды&nbsp;от Samsung&nbsp;</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;">
+
+		  <div><b><font color="#339966">AccuWeatherDaemonService.apk-</font></b>&nbsp;служба-демон, который отвечает за автоматическое обновление погоды (Виджет и само приложение)</div>
+
+		  <div><br /></div>
+
+		  <div><font color="#339966"><b>SamsungWidget_WeatherClock.apk</b></font>- Виджет часов с погодой от Samsung</div></div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><font color="#00ccff"><b>AdService.apk</b></font>- отвечает за рекламу в приложениях</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><b><font color="#00ccff">AlertRecipients.apk</font></b> - системное приложение, точное значение не установлено, но лучше не удалять.</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><b><font color="#339966">AllShareCastWidget.apk</font></b>- виджет-сервис для передачи файлов</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><b><font color="#339966">AllShareMediaServer.apk</font></b>- сервис для передачи медиа файлов</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><b><font color="#339966">AllSharePlay.apk</font></b>- &nbsp;софт для передачи файлов</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><b><font color="#339966">AllShareSevicw.apk-&nbsp;</font></b>сервис для передачи файлов</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><b><font color="#339966">Dlna.apk</font></b>- DLNA клиент AllShare</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><font color="#339966" style="font-weight: bold;">AnalogClockSimple.apk- </font>простой виджет часов</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><b><font color="#339966">AnalogClockUnique.apk-</font></b>&nbsp;виджет часов</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><b><font color="#339966">LiveWallpapers.apk</font></b>- стоковые обои</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><b><font color="#ff0000">ApplicationsProvider.apk-</font></b>&nbsp;cервис для установки и удаления программ</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><b><font color="#339966">AudioPortal_109_ms.app.apk</font></b>- портал Apps от Samsung</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><b><font color="#339966">SamsungWidget_News.apk</font></b>- виджет новостей от Samsung</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div style="font-size: medium;"><font color="#00ccff"><b>AppLock.apk</b></font>- ? возможно связан с блокировкой пиложений</div>
+
+		<div style="font-size: medium;"><br /></div>
+
+		<div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">BadgeProvider.apk</font></b>- служба для отображения бейджиков с информацией, необходима для СМС и почты</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">BluetoothAvrcp.apk-</font></b>&nbsp;служба для передачи файлов по Bluetooth</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">BluetoothOpp.apk</font></b>- служба для передачи файлов по Bluetooth</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">BluetoothPbap.apk</font></b>- служба для передачи файлов по Bluetooth&nbsp;</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#00ffff"><b>BluetoothMap.apk</b></font>- служба для передачи файлов по Bluetooth</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#ff0000">BluetoothTestMode.apk</font></b>- Тест Bluetooth, можно удалить, но в случае удаления возможны проблемы с передачей файлов, воспроизведением звука через BT гарнитуру</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#ff0000" style="font-weight: bold;">BrcmBluetoothServices.apk- </font><font>сервис</font><font color="#ff0000" style="font-weight: bold;">&nbsp;</font>для передачи файлов по Bluetooth</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Books.apk-</font></b>&nbsp;Google Play книги</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">BooksPortal_108_bs_app.apk</font></b>- книги от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">BuddiesNow.apk</font></b>- служба для новостей из соц.сетей, необходим для&nbsp;</div>
+
+			<div>Social Hub Samsung</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">TouchWizCalculator.apk</font></b>- стоковый калькулятор</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#33cccc">TouchWizCalendar.apk</font></b>- стоковый календарь, возможно удаление зацепит работу других приложений</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">TwCalendarAppWidget.apk-</font></b>&nbsp;виджет стокового календаря</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#33cccc">CalendarProvider.apk-</font></b> синхронизация стокового календаря, возможно&nbsp;</div>
+
+			<div>удаление зацепит работу других приложений.</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#339966"><b>TwWallpaperChooser.apk</b></font>- обои для лончера Touchwiz</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">CallSetting.apk</font></b>- служба настройки вызовов</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">Camera.apk</font></b>- стоковая камера</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#ff0000" style="font-weight: bold;">CapabilityManagerSerice.apk- </font><font>c</font>лужба совместимости приложений с текущей ОС</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">CarHomeGoogle.apk</font></b>- служба быстрого доступа к звонкам навигации для авто</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">CertInstaller.apk</font></b>- установщик сертификатов для приложений</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">ChatON_market.apk</font></b>- чат от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">ChocoEUKor.apk</font></b>- дополнительный, большой шрифт</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">ChromeBookmarksSyncAdapter.apk</font></b>- служба синхронизации стокового браузера с Google Chrome</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">ChromeWithBrowser.apk</font></b>- Браузер Chrome</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">AnalogClock.apk</font></b>- виджет аналоговых стоковых часов</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">ClockPackage.apk</font></b>- служба, без которой не работает будильник, таймер и т.п</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">Contacts.apk</font></b>- стоковое приложение контактов</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">ContactsProvider.apk</font></b>- синхронизация контактов</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#ff0000" style="font-weight: bold;">PhoneCrashNotifier.apk- </font><font>служба, уведомляющая пользователя об ошибках в приложениях</font></div>
+
+		  <div style="font-size: medium;"><font><br /></font></div>
+
+		  <div style="font-size: medium;"><font><b><font color="#ff0000">CSC.apk</font></b>- в случае удаления, нарушит CSC</font></div>
+
+		  <div style="font-size: medium;"><font><br /></font></div>
+
+		  <div style="font-size: medium;"><font>
+
+			  <div><b><font color="#ff0000">DataCreate.apk</font></b>- возможно, это приложение используется для создания&nbsp;</div>
+
+			  <div>тестовых данных.</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#339966">Days.apk</font></b>- виджет напоминалки</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#ff0000">Phone.apk</font></b>- номеронабератель (Звонилка)</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#ff0000">TelephonyProvider.apk</font></b>- сервисы SMS/MSM и APN настроек</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#339966">DigitalClock.apk</font></b>- &nbsp;виджет стоковых цифровых часов</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#ff0000">DirectConnect.apk</font></b>- обмен файлами</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#ff0000">DirectShareManager.apk</font></b>- менеджер обмена файлами</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#339966">Divx.apk</font></b>- служба для просмотра видео на внешних устройствах</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#ff0000">DownloadProvider.apk</font></b>- обеспечивает загрузку файлов вручную и из Маркета.</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#ff0000">DownloadProviderUi.apk-&nbsp;</font></b>обеспечивает загрузку файлов вручную и из Маркета.</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#339966">Dpi.apk</font></b>- служба управления разрешением экрана</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#ff0000">SisoDrmProvider.apk</font></b>- необходим для работы DrmProvider</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#ff0000">DrmUA.apk</font></b>- необходим для работы DrmProvider</div>
+
+			  <div><br /></div>
+
+			  <div>
+
+				<div><font color="#ff0000"><b>DrmProvider.apk</b></font>- защищает от редактирования и копирования</div>
+
+				<div>стандартные звуки Samsung. Удаление приведет к&nbsp;</div>
+
+				<div>невозможности воспроизведения защищенных DRM&nbsp;</div>
+
+				<div>файлов, таких как мелодии вызовов и звуки сообщений.</div></div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#339966">Dropbox.apk</font></b>- облачный сервис хранения данных</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#339966">DropboxOOBE.apk</font></b>- облачный сервис хранения данных</div>
+
+			  <div><br /></div>
+
+			  <div><b><font color="#339966">DSMForvarding.apk</font></b>- сервис оповещения о смене SIM карты</div></font></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">DSMLoawmo.apk</font></b>- удаленное блокирование и очистка телефона от&nbsp;</div>
+
+			<div>Samsung</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">DualClock.apk</font></b></div>
+
+			<div><b><font color="#339966">DualClock21.apk-&nbsp;</font></b>Двойные часы виджет (?Необходим для резервного&nbsp;</div>
+
+			<div>копирования информации учетной записи электронной&nbsp;</div>
+
+			<div>почты с Kies?)</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">EdmSysScopeService.apk</font></b>- мониторит данные текущих процессов в системе</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">EdmVpnService.apk</font></b>- служба VPN</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">EnterprisePermissions.apk</font></b>- раздает разрешения</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">EmailWidget.apk</font></b>- виджет стоковой почты</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">Encrypt.apk</font></b>- шифрование карты памяти (устройства) чтобы не&nbsp;</div>
+
+			<div>читалась на другом устройстве</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">PhoneErrService.apk</font></b>- сервис для звонилки. Лучше не удалять...</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">FaceLock.apk-</font></b>&nbsp;cлужба определения лица, при разблокировании&nbsp;</div>
+
+			<div>устройства</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">FactoryTest.apk</font></b>- тест устройства. Очень прожорлив, если не пользуетесь сервисными кодами, можно удалять</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b style="color: rgb(51, 204, 204);">FlashBarService.apk- </b>режим многооконности. Присутствует не на всех устройствах.</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">FmmDM.apk</font></b>- сервис Find My Mobile</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">FmmDS.apk</font></b>- сервис Find My Mobile</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">FmRadio.apk</font></b>- FM радио</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#33cccc">FOTAKill.apk</font></b>- служба блокирует обновления системы по воздуху.&nbsp;</div>
+
+			<div>Убивать нельзя, если пользуетесь кастомной прошивкой, обновляемой только вручную</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#339966" style="font-weight: bold;">fotaclient.apk- </font><font>о</font>твечает за обновление по воздуху</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">FWUpgrade.apk</font></b>- программа для обновления Firmware, вообще-то &nbsp;&laquo;Мутное&raquo; приложение, появилось в Маркете и сразу пропало</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#339966" style="font-weight: bold;">Gallery3D.apk- </font><font>г</font>алерея, нужна для обоев на экран блокировки</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">GameHub.apk</font></b>- игровой портал от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Gmail.apk</font></b>- почта Gmail</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">GoogleFeedback.apk-</font></b>&nbsp;отчет об использовании устройства, направляемый в Google</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">GoogleBackupTransport.apk-</font></b>&nbsp;cервис бекапа от Google</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">GoogleCalendarSyncAdapter.apk</font></b>- синхронизация календаря с Gmail</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">GoogleContactsSyncAdapter.apk</font></b>- синхронизация контактов с Gmail</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">OneTimeInitializer.apk</font></b>- первичная настройка Google, потом можно удалить</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">GooglePartnerSetup.apk</font></b>- социалка от Google</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">GoogleQuickSearchBox.apk</font></b>- быстрый поиск в контактах и т.д. от Google</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">GoogleServicesFramework.apk</font></b>- данный файл необходим для работы сервисов Google</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">Talk2.apk</font></b>- Google Talk, цепляет маркет</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">GoogleTTS.apk</font></b>- голосовой сервис от Google</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">GroupCast.apk</font></b>- сервис рассылки сообщений от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">HelvNeueLT.apk</font></b>- дополнительные шрифты</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Protips.apk</font></b>- помощь по Android</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">HTMLViewer.apk</font></b>- просмотр HTML кода в браузере</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SamsungIM.apk</font></b>- клавиатура от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">IMEITracker.apk</font></b>- трэкер, необходим для Samsung Drive</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">InputDevices.apk</font></b>- необходимо для подключения внешних устройств</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#ff0000">InputEventApp.apk</font></b>- клавиатура от Samsung, но возможно цепляет кнопки и тачскрин</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#ff0000">Browser.apk</font></b>- стоковый браузер, при удалении может конфликтовать&nbsp;</div>
+
+			<div>с некоторыми ROM/CSC</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">JobManager.apk</font></b>- стоковый диспетчер задач, можно заменить на любой&nbsp;</div>
+
+			<div>другой</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#ff0000">KeyChain.apk</font></b>- обеспечивает доступ к личным ключам и&nbsp;</div>
+
+			<div>соответствующим сертификатам в хранилище учетных&nbsp;</div>
+
+			<div>данных, лучше не трогать</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#33cccc"><b>Keystring_DFT.apk</b></font>- назначение приложения не известно.</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">KiesAir.apk</font></b>- подключение к Kies по воздуху</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">kieswifi.apk</font></b>- подключение к Kies по WiFi</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Kobo.apk</font></b>- журналы от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">LatinImeTutorial.apk</font></b>- обучает работать с клавиатурой</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">PanningTryActually.apk</font></b>- камера панорамирование</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Divx.apk</font></b>- DIVX проигрыватель</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">LiveWallpapersPicker.apk</font></b>- стоковые живые обои</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">LogsProvider.apk</font></b>- логи звонков и СМС, &laquo;лягут&raquo; многие приложения</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#ff0000">lcdtest.apk</font></b>- возможно тест экрана активирующийся через код на</div>
+
+			<div>устройстве. Дисплей перестанет отключатся при блокировке</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">LuminousDots.apk</font></b>- живые обои</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Magazines.apk</font></b>- журналы от Google</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Magnifier.apk</font></b>- увеличительное стекло</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">Maps.apk</font></b>- карты от Google, перестанет работать локатор</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">Vending.apk</font></b>- Google Play Market</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">MarketUpdater.apk</font></b>- обновление Google Play Market</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">MediaProvider.apk</font></b>- доступ к медиа файлам и рингтонам.</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Memo.apk</font></b>- сервис для &laquo;Заметок&raquo;</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">Mms.apk</font></b>- сервис для работы с MMS</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Microbesgl.apk</font></b>- живые обои &laquo;микробы&raquo;</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">MinimalHome.apk</font></b>- вроде бы урезанный рабочий стол от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">Minimode-res.apk</font></b>- составное от MiniApps</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">MiniDiary.apk</font></b>- мини заметки</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">PostIt.apk</font></b>- виджет мини заметки</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">MmsProvisioning.apk</font></b>- ресурсы по настройке MMS</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">MobilePrint.apk</font></b>- WiFi принтеры</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">MobileTrackerEngineTwo.apk</font></b>- трекер от Samsung Drive</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">MoreServices.apk</font></b>- еще одни дополнительные службы от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">MotionsSettings.apk</font></b>- сервис из настроек - меню "Движение"</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">MtpApplication.apk</font></b>- сервис для синхронизации с Kies</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">MusicPlayer.apk (Musiс2.apk)</font></b>- стоковый проигрыватель медиа файлов</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#339966"><b>MusicFX.apk</b></font>- сервис для DSP обработки звука</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">MusicHub_10.apk</font></b>- новый Music Hub</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">MusicHub_U1.apk</font></b>- Music Hub</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">MyFiles.apk</font></b>- стоковый файловый менеджер</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#33cccc"><b>MediaUploader.apk</b></font>- загрузка медиаконтента Facebook (Picasa?)</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">NetworkLocation.apk</font></b>- симуляция GPS</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Nfc.apk</font></b>- сервис поддержки NFC (Near Field Communication)</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">NfcTest.apk</font></b>- тест NFC</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">GenieWidget.apk</font></b>- виджет "новости и погода"</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">NoiseField.apk</font></b>- живые обои</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SecretWallpaper1.apk</font></b>- обои</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">wssomacp.apk (OmaCP.apk)</font></b>- предпросмотр части текста SMS/MMS</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">OmaDrmPopup.apk</font></b>- видео из стокового плейера в отдельном окошке</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">DefaultContainerService.apk</font></b>- сервис установки приложений</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">PackageInstaller.apk</font></b>- сервис установки apk не из маркета</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">PanningTryActually.apk</font></b>- панорамная съемка</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">PaperArtist.apk</font></b>- ретушь фото</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">PartnerBookmarksProvider.apk</font></b>- отвечает за панель уведомлений</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">PCWClientS.apk</font></b>- мониторинг причин остановки системных процессов</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">Personalization.apk</font></b>- персонализация настроек</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">Phonesky.apk</font></b>- Google Play Market (Альтернативное название Vending.apk)</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">PhaseBeam.apk</font></b>- живые обои</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">PhoneErrService.apk</font></b>- сервис связанный со звонками</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">Phone_Util.apk</font></b>- что-то касательно меню настроек</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">PhotoWall.apk</font></b>- что-то связано с фото.</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">PhotoRetouching.apk</font></b>- обработка фотографий</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">PicoTts.apk</font></b>- перевод текста в речь.</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">PicUpTutorial.apk</font></b>- рамка Фото</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">PRUI.apk</font></b>- play ready UI, plays DRM content</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#339966"><b>PlusOne.apk</b></font>- Google Plus</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">PolarisOffice.apk</font></b>- офис от Polaris</div>
+
+			<div><br /></div>
+
+			<div><b><font color="#339966">PolarisViewer.apk</font></b>- вьювер от Polaris</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">PopupuiReceiver.apk</font></b>- управляет всплывающими окнами (реклама)</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">Preconfig.apk</font></b>- cамсунговский модуль изменения кода CSC</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">Preloadinstaller.apk</font></b>- точное назначение не известно, возможно связан с установкой приложений</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">PressReader.apk</font></b>- газеты от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#ff0000">SecDownloadProvider.apk</font></b>- системное приложение отвечает за дополнительную загрузку</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SamsungWidget_ProgramMonitor.apk</font></b>- виджет процессов от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">QuickView.apk</font></b>- превью изображений, цепляет фото</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">RCSE.apk</font></b>- интернет звонилка</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">ReadersHub.apk</font></b>- читальня</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">RoseEUKor.apk</font></b>- очередной системный шрифт</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Ru.more.play_2.0.0_public_relise.apk</font></b>- проигрыватель аудиофайлов</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">signin.apk</font></b>- аккаунт от Samsung нужен для SamsungApps.apk</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SamsungApps.apk</font></b>- приложения от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">AxT9IME.apk</font></b>- клавиатура от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">SamsungPushService.apk</font></b>- cлужба уведомлений от Samsung для программ таких как: ChatON</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><font color="#339966"><b>SMTEngine.apk/ SMTSetup.apk/&nbsp;</b></font></div>
+
+			<div><font color="#339966"><b>SamsungTTS.apk</b></font>- сервис для преобразования текста в речь (Samsung</div>
+
+			<div>Text To Speak Engine)</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SamsungAppsUNA3.apk</font></b>- магазин от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><font color="#ff0000"><b>SamsungCamera.apk</b></font>- камера от самсунг</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SamsungIME.apk</font></b>- клавиатура, сток от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Samsungservice.apk</font></b>- служба синхронизации с сервисами Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SamsungWidget_FavoritesApp.apk</font></b>- избранные приложения, виджет</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><font color="#339966"><b>sCloudBackupApp.apk</b></font></div>
+
+			<div><font color="#339966"><b>sCloudBackupProvider.apk</b></font></div>
+
+			<div><font color="#339966"><b>sCloudDataRelay.apk</b></font></div>
+
+			<div><font color="#339966"><b>sCloudDataSync.apk</b></font></div>
+
+			<div><font color="#339966"><b>sCloudSyncBrowser.apk</b></font></div>
+
+			<div><font color="#339966"><b>sCloudSyncCalendar.apk</b></font></div>
+
+			<div><font color="#339966"><b>sCloudSyncContacts.apk</b></font></div>
+
+			<div><b style="color: rgb(51, 153, 102);">sCloudSyncMemo.apk- </b>облачный сервис и все что с ним связано</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">ScreenCapture.apk</font></b></div>
+
+			<div><b><font color="#339966">ScreenCaptureService.apk</font></b>- снимок экрана home и power buttons</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SnsImageCache.apk</font></b>- нужна для Социального центра от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#33cccc">ApplicationsProvider.apk</font></b>- сервис используется для установки и удаления приложений</div>
+
+			<div><br /></div>
+
+			<div><b><font color="#ff0000">SecBluetooth.apk</font></b>- сервис Bluetooth</div>
+
+			<div><br /></div>
+
+			<div><b><font color="#339966">SecBrowser.apk</font></b>- стоковый браузер</div>
+
+			<div><br /></div>
+
+			<div><b><font color="#339966">SecCalculator2.apk</font></b>- стоковый калькулятор</div>
+
+			<div><br /></div></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SecCalendar.apk</font></b>- стоковый календарь</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecCalendarProvider.apk</font></b>- сервис синхронизации календаря</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">SecContacts.apk</font></b>- сервис сохранения действий с контактами (удаление&nbsp;</div>
+
+			<div>приведет к постоянному набиранию номера в ручную)</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecContactsProvider.apk</font></b>- сервис доступа сторонних приложений к контактам</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecDownloadProvider.apk</font></b>- сервис для работы с маркетом (загрузка файлов)</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SecDownloadProviderUi.apk</font></b>- сервис загрузок из стокового браузера</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecurityProvider.apk</font></b>- сервис для шифрования соединения</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">SecEmail.apk</font></b>- стоковый почтовый клиент POP/IMAP (почту Гугла не&nbsp;</div>
+
+			<div>трогает)</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SecExchange.apk</font></b>- корпоративная почта + планировщик</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">SecFactoryPhoneTest.apk</font></b>- ненужный тест телефона (удалять аккуратно, девайс не будет воспринимать сервис коды)</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SecFileShareClient.apk</font></b>- сервис обмена файлами через Wi-Fi Direct</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SecGallery2.apk</font></b>- стоковая галерея (При удалении отключается быстрый просмотр фото из камеры)</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecHTMLViewer.apk</font></b>- сервис считывания HTML кода.</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">SecLauncher2.apk-&nbsp;</font></b>экран TouchWiz (Удаляь только при наличии другого установленного лончера)</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SecLiveWallpapersPicker.apk</font></b>- браузер живых обоев</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecMediaProvider.apk</font></b>- сервис для получения доступа к медиа файлам</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SecMemo.apk</font></b>- сервис Заметки</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SecMemoWidget.apk</font></b>- виджет Заметки</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecMmsDS.apk</font></b>- сообщения</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SecNoteMyFiles.apk</font></b>- стоковый файловый менеджер</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecOmaDownloadProvider.apk</font></b>- информация о загруженных файлах</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecPhone_DS.apk</font></b>- телефон</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecSettings.apk</font></b>- меню настроек телефона</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#ff0000">SecSettingsProvider.apk</font></b>- осуществляет прием и применение настроек,&nbsp;</div>
+
+			<div>полученных в текстовом или сервисном сообщении</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecSetupWizard.apk</font></b>- хранение параметров и настроек</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SecTelephonyProviderDS.apk</font></b>- хранение данных SMS/MMS</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SelfTestMode.apk</font></b>- тест аппарата во время его загрузки</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SerialNumberLabelIndicator.apk</font></b>- участвует в определении IMEI</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">ServiceModeApp.apk</font></b>- служба для обработки задач и сервис-кодов</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SetDefaultBrowser.apk</font></b>- установка дефолтного браузера</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">Settings.apk</font></b>- меню настройки</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SettingsProvider.apk</font></b>- служба хранит параметры и настройки</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#33cccc">SetupWizard.apk</font></b>- можно удалить после первого запуска телефона, но&nbsp;</div>
+
+			<div>после Hard Reset может не запустится</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><font color="#339966"><b>SharedStorageBackup.apk,</b></font></div>
+
+			<div><font color="#339966"><b>ShareShotService.apk</b></font>- облачный бекап</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">ShareApp.apk</font></b>- облачный обмен программами</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">shutdown.apk</font></b>- сервис информирования разряда батареи</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SimpleAlarmClock.apk</font></b>- стоковый будильник, виджет</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SimpleFavoritesWidget.apk</font></b>- избранные контакты, виджет</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">SimServicePermission.apk</font></b>- вроде бы нужен для пользования Orange</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">Stk.apk</font></b>- инструменты для управления сим картами</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SlideShow.apk</font></b>- слайд шоу в галерее, без него галерея работает</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SmartcardService.apk</font></b>- вроде бы нужна для работы с мультисим картами</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SMemo.apk</font></b>- заметки стоковые</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SMemoProvider.apk</font></b>- доступ к заметкам других приложений</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SnsProvider.apk</font></b>- синхронизирует данные с соцсетями</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SnsDisclaimer.apk</font></b>- служба нужна для работы соцсетей</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SnsAccountFb.apk</font></b>- нужна для синхронизации с facebook</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SnsAccountLi.apk</font></b>- нужна для синхронизации с linked in</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SnsAccountMs.apk</font></b>- нужна для синхронизации с myspace</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SnsAccountTw.apk</font></b>- нужна для синхронизации с twitter</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SevenEngine.apk</font></b>- служба нужна для работы соцсетей</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SocialHub.apk</font></b>- служба нужна для работы соцсетей</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">syncmldm.apk</font></b>- служба нужна для обновления приложений</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SoundPlayer.apk</font></b>- служба относится к музыкальному проигрывателю</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SpareParts.apk</font></b>- дополнительные настройки в меню</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SpeechRecorder.apk</font></b>- запись образцов речи для голосового управления</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SPlannerAppWidget.apk</font></b>- виджет календаря</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SPPPushClient_Prod.apk</font></b>- Samsung Push Service</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#ff0000">SystemUI.apk</font></b>- пользовательский интерфейс, нужно для работы</div>
+
+			<div>рабочего стола, шторки и статус бара</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">Street.apk</font></b>- просмотр улиц для Google Maps. Касается только&nbsp;</div>
+
+			<div>фотографий на карте</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SSuggest.apk</font></b>- самсунговская альтернатива GPM</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Swype.apk</font></b>- свайп клавиатура</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SyncmIDM.apk</font></b>- часть обновления программного обеспечения</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">syncmlds.apk</font></b>- настройки синхронизации</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">SysScope.apk</font></b>- сервис мониторинга текущих процессов</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Tag.apk</font></b>- сервис связан с считыванием NFC меток</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">Talk.apk</font></b>- Google Talk</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">talkback.apk</font></b>- специальные возможности</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Tasks.apk</font></b>- сервис "Задачи"</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#33cccc">JobManager.apk</font></b>- диспетчер задач, при удалении не работает диспетчер&nbsp;</div>
+
+			<div>по долгому тапу кнопки &laquo;Домой&raquo;</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#ff0000">TasksProvider.apk</font></b>- задачи</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">TMServerApp.apk</font></b>- TM Server</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">TopicWall.apk</font></b>- очередной сервис обоев</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">TrimApp.apk</font></b>- видеоредактор</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#33cccc">TtsService.apk</font></b>- сервис для перевода текста в речь, возможно нужен&nbsp;</div>
+
+			<div>для навигации от Google</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">TouchWiz30Launcher.apk</font></b>- стоковый лаунчер, можно удалить, если есть&nbsp;</div>
+
+			<div>альтернативный</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Kies.apk</font></b>- cервис Kies</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#33cccc">UserDictionaryProvider.apk</font></b>- пользовательский словарь, без него не работает стоковая клавиатура</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">VideoEditor.apk</font></b>- видео редактор стоковый</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">VideoPlayer.apk</font></b>- видео плейер стоковый</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Videos.apk</font></b>- фильмы от GP</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">VoiceToGo.apk</font></b>- голосовой сервис от Samsung</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">VoiceDialer.apk</font></b>- голосовой набор</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">VoiceRecorder.apk</font></b>- диктофон стоковый</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">VoiceSearch.apk</font></b>- голосовой поиск</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">Voicetalk.apk</font></b>- голосовое управление</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">VpnDialogs.apk</font></b>- сервис необходим, для VPN</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">VpnServices.apk</font></b>- сервис необходим, для VPN</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#33cccc">WapPushManager.apk</font></b>- сервис отвечает за WAP интернет</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">wssyncmlnps.apk</font></b>- компонент обновления прошивки устройства</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">WeatherWall.apk</font></b>- живые обои погода</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">WebManual.apk</font></b>- инструкция Web</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">FTC.apk</font></b>- Wifi file transfer</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">WfdBroker.apk</font></b>- сервис связан с WiFi Direct</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">FTS.apk</font></b>- Wifi сервер менеджер</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">FTM.apk</font></b>- Wifi менеджер файлов</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">SecretWallpaper2.apk</font></b>- обои для рабочего стола</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">wipereceiver.apk</font></b>- нужен для Samsung Drive</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">WlanTest.apk</font></b>- тест Wifi</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">wssyncmlnps.apk</font></b>- сервис изменения настроек провайдером</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">YahoonewsDaemon.apk,</font></b></div>
+
+			<div><b><font color="#339966">YahoonewsWidget.apk,</font></b></div>
+
+			<div><b><font color="#339966">YahoostockDaemon.apk,</font></b></div>
+
+			<div><b><font color="#339966">YahoostockWidget.apk</font></b>- сервисы от Yahoo!</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">YouTube.apk</font></b>- проигрыватель Youtube</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">yandexafisha-android.apk</font></b>- Яндекс.Афиша.</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">yandexmarket-android.apk</font></b>- Яндекс.Маркет.</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">yandexnews-android.apk</font></b>- Яндекс.Новости</div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;">
+
+			<div><b><font color="#339966">yandexpogoda-android.apk,</font></b></div>
+
+			<div><b><font color="#339966">yandexpogoda-android-32.apk</font></b>- Яндекс.Погода</div></div>
+
+		  <div style="font-size: medium;"><br /></div>
+
+		  <div style="font-size: medium;"><b><font color="#339966">yandextraffic-android.apk</font></b>- Яндекс.Пробки</div>
+
+		  <div style="font-size: medium;"></div>
+
+		  <hr style="font-size: medium;" /><font size="1">За информацию огромное спасибо пользователю <b>niro_ig</b></font></div></font></span></body></html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dividerList">#8b0000</color> <!-- цвет разделителя элементов в списке-->
+    <color name="dividerMenu">#8b0000</color> <!-- цвет разделителя элементов в списке меню-->
+    <color name="borderColorList">#8b0000</color> <!-- цвет рамки в списке -->
+    <color name="BGColorList">#ff212121</color> <!-- цвет фона списка -->
+    <color name="BGColorMenu">#ff212121</color> <!-- цвет фона списка меню-->
+    <color name="TextMenuColor">#FFFFFF</color> <!-- цвет текста списке меню-->
+    <color name="TextListColor">#FFFFFF</color> <!-- цвет текста в списке-->
+    <color name="purple_light">#a276eb</color>
+    <color name="purple_middle">#8658ce</color>
+    <color name="purple_dark">#6a3ab2</color>
+</resources>

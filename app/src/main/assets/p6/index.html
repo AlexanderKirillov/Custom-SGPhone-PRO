@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"></head>
+  <body><font color=white><h2 style="line-height: 1.5; text-align: center;"><font color="#ff0000" size="5">Бэкапим раздел EFS&nbsp;</font></h2>
+
+	  <div style="line-height: 1.5;"><font color="red" size="4">EFS</font><font size="3">- один из важных системных разделов смартфонов Samsung, содержащий: IMEI, S/N, GPSID, WIFIMAC, BTMAC, и.т.д</font></div>
+
+	  <div style="line-height: 1.5;"><font size="3">Перед тем, как приступить к перепрошивке или рутированию смартфонов Samsung, нужно </font><font color="red" size="4"><b>ОБЯЗАТЕЛЬНО</b></font><font size="3"> сделать резервную копию этого раздела, чтобы исключить потерю S/N или IMEI при перепрошивке</font></div>
+	  <p></p>
+	  <div style="line-height: 1.5;"><font size="3">В данной инструкции мы разберем способы резервирования/восстановления раздела EFS.</font></div>
+	  <hr>
+	  <div class="spoil">
+		<div class="smallfont" align="center"><input type="button" style="width:300Px;height:60Px;background-color:#8b0000;color:white;" value="Способ №1 (Через терминал)" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Способ №1 (Через терминал)'; }
+			else
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Способ №1 (Через терминал)'; }"/>
+		</div>
+		<div class="alt2">
+		  <div style="display: none;">
+			<p style="line-height: 1.5;"><font size="3"><font color="green"><b>1)</b></font> Установите на Ваше устройство Samsung бесплатное приложение <b><a href="https://play.google.com/store/apps/details?id=jackpal.androidterm&amp;hl=ru"><font color="red">Android Terminal Emulator</font></a></b></font></p>
+
+			<p style="line-height: 1.5; text-align: left;"><font size="3"><font color="green"><b>2)</b></font> Зайдите в данное приложение и наберите следующие команды, в зависимости от необходимого действия:</font></p>
+
+			<p style="line-height: 1.5; text-align: left;"><font size="3">Для того чтобы <strong><font color="#ff00ff">сохранить IMEI:</font></strong></font></p>
+
+			<div class="post-block code " style="line-height: 19.200000762939453px; max-width: 100%; border-width: 1px 1px 1px 4px; border-style: dotted dotted dotted solid; border-color: rgb(170, 170, 170) rgb(170, 170, 170) rgb(170, 170, 170) rgb(253, 104, 38); margin: 8px 0px 0px; font-family: Verdana, Tahoma, Arial, 'Trebuchet MS', sans-serif, Georgia, Courier, 'Times New Roman', serif; box-sizing: border-box; color: rgb(70, 85, 132);">
+
+			  <div class="block-title" data-block-init="1" style="font-size: 10px; color: rgb(0, 0, 0); line-height: 2; min-height: 20px; max-width: 100%; margin: 0px; padding: 3px 5px; background-image: url(http://s.4pda.ru/forum/style_images/1/css_img_code.gif); background-color: rgb(253, 219, 204); font-weight: bold; background-position: 100% 50%; background-repeat: no-repeat no-repeat;">КОД</div>
+
+			  <div class="block-body " style="padding: 3px 5px; max-width: 100%; background-color: rgb(250, 252, 254); font-family: 'Lucida Console', Monaco, Courier, monospace; white-space: pre-wrap; word-break: break-word;"><font size="2">su
+				  <hr>dd if=/dev/block/xxxxxx of=/sdcard/efs.img</font></div></div>
+
+
+			<p style="line-height: 1.5;"><font size="3">Для того чтобы <strong><font color="#ff00ff">восстановить IMEI:</font></strong></font></p>
+
+			<div class="post-block code " style="line-height: 19.200000762939453px; max-width: 100%; border-width: 1px 1px 1px 4px; border-style: dotted dotted dotted solid; border-color: rgb(170, 170, 170) rgb(170, 170, 170) rgb(170, 170, 170) rgb(253, 104, 38); margin: 8px 0px 0px; font-family: Verdana, Tahoma, Arial, 'Trebuchet MS', sans-serif, Georgia, Courier, 'Times New Roman', serif; box-sizing: border-box; color: rgb(70, 85, 132);">
+
+			  <div class="block-title" data-block-init="1" style="font-size: 10px; color: rgb(0, 0, 0); line-height: 2; min-height: 20px; max-width: 100%; margin: 0px; padding: 3px 5px; background-image: url(http://s.4pda.ru/forum/style_images/1/css_img_code.gif); background-color: rgb(253, 219, 204); font-weight: bold; background-position: 100% 50%; background-repeat: no-repeat no-repeat;">КОД</div>
+
+			  <div class="block-body " style="padding: 3px 5px; max-width: 100%; background-color: rgb(250, 252, 254); font-family: 'Lucida Console', Monaco, Courier, monospace; white-space: pre-wrap; word-break: break-word;"><font size="2">su
+				  <hr />dd if=/sdcard/efs.img of=/dev/block/xxxxxxx</font></div></div>
+
+			<p style="line-height: 1.5;"><font size="4">Где<em><strong> xxxxxxx </strong></em>это имя блока EFS.</font></p>
+
+			<h2 style="line-height: 1.5; text-align: center;"><font color="#ff0000" size="5">Как узнать имя блока EFS</font></h2>
+
+			<p style="line-height: 1.5;"><font size="3">Зайдите в приложение Android Terminal Emulator и наберите следующую команду</font></p>
+
+			<div class="post-block code " style="line-height: 19.200000762939453px; max-width: 100%; border-width: 1px 1px 1px 4px; border-style: dotted dotted dotted solid; border-color: rgb(170, 170, 170) rgb(170, 170, 170) rgb(170, 170, 170) rgb(253, 104, 38); margin: 8px 0px 0px; font-family: Verdana, Tahoma, Arial, 'Trebuchet MS', sans-serif, Georgia, Courier, 'Times New Roman', serif; box-sizing: border-box; color: rgb(70, 85, 132);">
+
+			  <div class="block-title" data-block-init="1" style="font-size: 10px; color: rgb(0, 0, 0); line-height: 2; min-height: 20px; max-width: 100%; margin: 0px; padding: 3px 5px; background-color: rgb(253, 219, 204); font-weight: bold; background-position: 100% 50%; background-repeat: no-repeat no-repeat;">КОД</div>
+
+			  <div class="block-body " style="padding: 3px 5px; max-width: 100%; background-color: rgb(250, 252, 254); font-family: 'Lucida Console', Monaco, Courier, monospace; white-space: pre-wrap; word-break: break-word;"><font size="2">mount</font></div></div>
+
+
+			<p style="line-height: 1.5;"><font size="3">после чего найдите раздел с префиксом /efs и запишите его имя (в моем случае имя данного блока- mmcblk0p1)</font></p>
+
+			<p style="line-height: 1.5; text-align: left;"><a href="Screenshot_2013-07-01-12-13-11.png"><font size="3"><img class=" wp-image-242 alignleft" src="Screenshot_2013-07-01-12-13-11.png" width="259" height="432" /></font></a></p>
+
+			<p style="line-height: 1.5; text-align: left;"><font size="3">Значит чтобы сохранить IMEI в <font color="red"><b>данном случае</b></font> нужно ввести следующие команды:</font></p>
+
+			<div class="post-block code " style="line-height: 19.200000762939453px; max-width: 100%; border-width: 1px 1px 1px 4px; border-style: dotted dotted dotted solid; border-color: rgb(170, 170, 170) rgb(170, 170, 170) rgb(170, 170, 170) rgb(253, 104, 38); margin: 8px 0px 0px; font-family: Verdana, Tahoma, Arial, 'Trebuchet MS', sans-serif, Georgia, Courier, 'Times New Roman', serif; box-sizing: border-box; color: rgb(70, 85, 132);">
+
+			  <div class="block-title" data-block-init="1" style="font-size: 10px; color: rgb(0, 0, 0); line-height: 2; min-height: 20px; max-width: 100%; margin: 0px; padding: 3px 5px; background-image: url(http://s.4pda.ru/forum/style_images/1/css_img_code.gif); background-color: rgb(253, 219, 204); font-weight: bold; background-position: 100% 50%; background-repeat: no-repeat no-repeat;">КОД</div>
+
+			  <div class="block-body " style="padding: 3px 5px; max-width: 100%; background-color: rgb(250, 252, 254); font-family: 'Lucida Console', Monaco, Courier, monospace; white-space: pre-wrap; word-break: break-word;"><font size="2">su
+				  <hr>dd if=/dev/block/mmcblk0p1 of=/sdcard/efs.img</font></div></div>
+
+			<div style="line-height: 1.5; float: none; margin: 0px;"><span style="font-size: medium;"><br /></span></div>
+
+			<div style="line-height: 1.5; float: none; margin: 0px;">
+			  <div style="float: none; margin: 0px;"><span style="font-size: medium;">А чтобы восстановить IMEI в&nbsp;<font color="red"><b>данном случае</b></font>&nbsp;нужно ввести следующие команды:</span></div>
+			  <div style="float: none; margin: 0px;">
+				<div class="post-block code " style="max-width: 100%; border-width: 1px 1px 1px 4px; border-style: dotted dotted dotted solid; border-color: rgb(170, 170, 170) rgb(170, 170, 170) rgb(170, 170, 170) rgb(253, 104, 38); margin: 8px 0px 0px; font-family: Verdana, Tahoma, Arial, 'Trebuchet MS', sans-serif, Georgia, Courier, 'Times New Roman', serif; box-sizing: border-box; color: rgb(70, 85, 132); line-height: 19.200000762939453px;">
+				  <div class="block-title" data-block-init="1" style="font-size: 10px; color: rgb(0, 0, 0); line-height: 2; min-height: 20px; max-width: 100%; margin: 0px; padding: 3px 5px; background-image: url(http://s.4pda.ru/forum/style_images/1/css_img_code.gif); background-color: rgb(253, 219, 204); font-weight: bold; background-position: 100% 50%; background-repeat: no-repeat no-repeat;">КОД</div>
+				  <div class="block-body " style="padding: 3px 5px; max-width: 100%; background-color: rgb(250, 252, 254); font-family: 'Lucida Console', Monaco, Courier, monospace; white-space: pre-wrap; word-break: break-word;"><font size="2">su
+					  <hr />dd if=/sdcard/efs.img of=/dev/block/mmcblk0p1</font></div></div></div></div>
+		  </div></div></div>
+	  <hr>
+	  <div class="spoil">
+		<div class="smallfont" align="center"><input type="button" style="width:300Px;height:60Px;background-color:#8b0000;color:white;" value="Способ №2 (Через спец. утилиту)" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Способ №1 (Через спец. утилиту)'; }
+			else
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Способ №1 (Через спец. утилиту)'; }"/>
+		</div>
+		<div class="alt2">
+		  <div style="display: none;">
+			<div style="line-height: 1.5; float: none; margin: 0px;"><font size="3" color="red"><b>Самый удобный способ бэкапа, но не самый безопасный...</b></font></div>
+			<div style="line-height: 1.5; float: none; margin: 0px;"><font size="3" color="#ff0000"><b><br /></b></font></div>
+			<div style="line-height: 1.5; float: none; margin: 0px;"><font size="4" color="#ff0000"><b>Требования:</b></font></div>
+			<div style="float: none; margin: 0px;">
+			  <ul>
+				<li><span style="line-height: 1.5;"><font size="3">Наличие Root прав</font></span></li></ul>
+			  <div><span style="line-height: 1.5;"><font color="#ff0000" size="4"><b>Приступаем..</b></font></span></div>
+			  <div><font size="3"><span style="line-height: 1.5;">1) Скачиваем и устанавливаем программу <font color="red"><a href="https://play.google.com/store/apps/details?id=com.spocky.galaxsimunlock#?t=W251bGwsMSwxLDIxMiwiY29tLnNwb2NreS5nYWxheHNpbXVubG9jayJd" target=""><font color=red>GalaxSimUnlock</font></a></font></span></font></div>
+			  <div><font size="3"><span style="line-height: 1.5;">2) Запускаем программу</span></font></div>
+			  <div><font size="3"><span style="line-height: 1.5;">3) Выбираем графу Tools, ищем соответствующий пункт и нажимаем на него.</span></font></div>
+			  <div><font size="3"><span style="line-height: 1.5;"><br /></span></font></div>
+			  <div><font size="3"><span style="line-height: 1.5;">Через данную утилиту можно забэкапить и также восстановить раздел EFS!</span></font></div></div></div></div></div><hr></font></body></html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"></head>
+  <body><font color="white"><p style="line-height: 1.5; text-align: center;"><font color="#ff0000" size="5">Перепрошивка через ODIN 3 (ПК версия)</font></p>
+
+	  <p style="line-height: 1.5;"><font size="3">Программа Odin необходима для прошивки Android устройств от известного мирового производителя мобильной техники Samsung.<span id="more-89"></span> Данной программой можно прошить абсолютно любое устройство Samsung на базе ОС Android в домашних условиях без особых усилий и знаний.&nbsp;</font></p>
+	  <p style="line-height: 1.5;"><font size="3"><font color="#ff0000"><b>Помните! Если Вы имеете устройство со счетчиком KNOX и прошиваете что-либо неофициальное (кастомное рекавери, кастомное ядро и т.п), то счетчик KNOX "тикает", и вследствии этого теряется гарантия на устройство! Если же Вы прошиваете полностью <b>официальные</b> прошивки, ядра, рекавери, то счетчик не тикает.</b></font></font></p>
+
+	  <hr style="line-height: 1.5;" />
+
+	  <h2 style="line-height: 1.5; text-align: left;"><font color="red" size="4">Подготовка к прошивке </font></h2>
+
+	  <span style="line-height: 1.5;"><font size="3">1. Скачайте официальную или кастомную прошивку для Вашего устройства Samsung.</font></span>
+	  <font size="3"><span style="line-height: 1.5;">Найти прошивку Вы можете в теме 4PDA для Вашего устройства.</span></font>
+
+	  <p style="line-height: 1.5;"><font size="3">2. Установите <a title="Драйвера для Android" href="http://developer.samsung.com/technical-doc/view.do?v=T000000117" target="_blank"><font color="red">драйвер на ПК</font></a></font></p>
+
+	  <p style="line-height: 1.5;"><font size="3">3. Скачайте и распакуйте <font color="#ff6600"><a title="Odin — прошивальщик смартфонов Samsung" href="http://4pda.ru/forum/index.php?showtopic=648344" target=""><font color="red">программу ODIN</font></a>&nbsp;</font> в отдельную папку</font></p>
+
+	  <hr style="line-height: 1.5;" />
+
+	  <div class="spoil">
+
+		<div class="smallfont" align="center" style="line-height: 1.5;"><input type="button" style="width:300Px;height:60Px;background-color:#8b0000;color:white;" value="Прошивка однофайловой прошивки" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Прошивка однофайловой прошивки'; }
+			else
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Прошивка однофайловой прошивки'; }" />
+		</div>
+
+		<div class="alt2">
+
+		  <div style="display: none;">
+
+			<div style="line-height: 1.5;"><font size="3">Однофайловая прошивка- это прошивка, состоящая из одного файла с расширением tar или tar.md5.&nbsp;</font></div>
+
+			<div style="line-height: 1.5;">
+
+			  <h3 style="text-align: center;"><span style="text-decoration: underline; color: rgb(255, 0, 0);"><strong>При прошивке возможна потеря программ и их данных!</strong></span></h3>
+
+			  <div><font size="3"><b><font color="#339966">1)</font></b> После скачивания прошивки и установки драйверов на ПК, мы приступаем к самому процессу прошивки!</font></div>
+
+			  <h3 style="text-align: left;"><font size="3" color="#339966">2)</font><font size="3" style="font-weight: normal;"> Переводим смартфон в режим прошивки (bootloader). Посмотреть как перевести смартфон в данный режим Вы можете ниже:</font></h3>
+
+			  <h3 style="text-align: left;"><span style="font-size: medium;"><font color="#ff00ff">Для старых смартфонов это выглядит так (до средины 2011г.):</font></span></h3></div>
+
+			<p style="line-height: 1.5;"><font size="3"><strong>Выключаем</strong> смартфон/планшет и зажимаем кнопки Громкость вниз + кнопка Вкл/Выкл</font></p>
+
+			<h3 style="line-height: 1.5;"><font color="#ff00ff" size="3">Для новых смартфонов это выглядит так:</font></h3>
+
+			<p style="line-height: 1.5;"><font size="3"><strong>Выключаем</strong> смартфон/планшет и зажимаем кнопки Громкость Вниз + Центральная кнопка + кнопка Вкл/Выкл. Попадаем в меню, отпускаем кнопки и&nbsp;нажимаем кнопку Громкость Вверх.</font></p>
+
+			<p style="line-height: 1.5;"><font size="3"><b><font color="#339966">3)</font></b>&nbsp;Подсоедините ваш смартфон Android к ПК и дождитесь пока установятся драйвера.</font></p>
+
+			<p style="line-height: 1.5;"><font size="3"><b><font color="#339966">4)</font></b>&nbsp;Запустите Odin, в левом верхнем углу должно появится окошко что устройство подключено (см. скриншот).&nbsp;</font><span style="font-size: medium; line-height: 24px;">Если данного сообщения не появляется- переустановите драйвера!</span></p>
+
+			<p style="line-height: 1.5; text-align: left;"><img src="DEVICE.jpg" /></p>
+
+			<p style="line-height: 1.5; text-align: left;"><font size="3"><b><font color="#339966">5)</font></b>&nbsp;Добавляем файлы прошивки в программу Odin</font></p>
+
+			<p style="line-height: 1.5; text-align: left;"><font size="3">Т.к наша прошивка однофайловая, ставим галку в программе напротив пункта PDA (В один 3.09 он называется PA) и указываем путь к файлу прошивки (tar или tar.md5). Подробнее смотрите на фото ниже!</font></p>
+
+			<p style="line-height: 1.5;"><img src="Odin3.jpg" /></p>
+
+			<p style="line-height: 1.5; text-align: left;"><font size="3">Советую в левом верхнем меню <font color="#ff0000">Option</font> ничего не менять, т.к это может повлечь за собой сбои при прошивке. Все нужные галки программа сама выставляет, в зависимости от типа прошивки и устройства.</font></p>
+
+			<p style="line-height: 1.5; text-align: left;"><font size="3"><b><font color="#339966">6)</font></b>&nbsp;После того как выбрали файлы прошивки нажмите кнопку <strong>START </strong>и после чего начнется прошивка Android которая будет длится от 2-х до 5-и минут. После чего появится сообщение <span style="background-color: rgb(0, 204, 255);"><strong>PASS</strong></span>,  прошивка установлена и смартфон перезагрузится (можете отключить Samsung от ПК).</font></p>
+
+			<p style="line-height: 1.5;"><font size="3" color="#800080"><b>На этом прошивка закончена.&nbsp;</b></font></p>
+
+			<p style="line-height: 1.5;"><font size="3">Если после прошивки Samsung у вас происходит вечная загрузка, то необходимо <strong><a href="http://androidp1.ru/wipe-android/" target="_blank"><font color="red">выполнить сброс данных или так называемый WIPE</font></a></strong>.</font></p>
+		  </div>
+		</div>
+	  </div>
+	  <hr style="line-height: 1.5;" />
+
+	  <div class="spoil" style="line-height: 1.5;">
+
+		<div class="smallfont" align="center"><input type="button" style="width:300Px;height:60Px;background-color:#8b0000;color:white;" value="Прошивка многофайловой прошивки" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Прошивка многофайловой прошивки'; }
+			else
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Прошивка многофайловой прошивки'; }" />
+		</div>
+
+		<div class="alt2">
+
+		  <div style="display: none;">
+
+			<div><font size="3">Многофайловая прошивка- это прошивка, состоящая из множества файлов с расширениями tar.md5 (Возможно расширение tar).</font></div>
+
+			<div>
+
+			  <h3 style="text-align: center;"><span style="text-decoration: underline; color: rgb(255, 0, 0);"><strong>При прошивке возможна потеря программ и их данных!</strong></span></h3>
+
+			  <div><font size="3"><b><font color="#339966">1)</font></b> После скачивания прошивки и установки драйверов на ПК, мы приступаем к самому процессу прошивки!</font></div>
+
+			  <h3><font size="3" color="#339966">2)</font><font size="3" style="font-weight: normal;"> Переводим смартфон в режим прошивки (bootloader). Посмотреть как перевести смартфон в данный режим Вы можете ниже:</font></h3>
+
+			  <h3><span style="font-size: medium;"><font color="#ff00ff">Для старых смартфонов это выглядит так (до средины 2011г.):</font></span></h3></div>
+
+			<p><font size="3"><strong>Выключаем</strong>&nbsp;смартфон/планшет и зажимаем кнопки Громкость вниз + кнопка Вкл/Выкл</font></p>
+
+			<h3><font color="#ff00ff" size="3">Для новых смартфонов это выглядит так:</font></h3>
+
+			<p><font size="3"><strong>Выключаем</strong>&nbsp;смартфон/планшет и зажимаем кнопки Громкость Вниз + Центральная кнопка + кнопка Вкл/Выкл. Попадаем в меню, отпускаем кнопки и&nbsp;нажимаем кнопку Громкость Вверх.</font></p>
+
+			<p><font size="3"><b><font color="#339966">3)</font></b>&nbsp;Подсоедините ваш смартфон Android к ПК и дождитесь пока установятся драйвера.</font></p>
+
+			<p><font size="3"><b><font color="#339966">4)</font></b>&nbsp;Запустите Odin, в левом верхнем углу должно появится окошко что устройство подключено (см. скриншот). Если данного сообщения не появляется- переустановите драйвера!</font></p>
+
+			<p><img src="DEVICE.jpg" /></p>
+			<p></p>
+
+			<p><font size="3"><b><font color="#339966">5)</font></b>&nbsp;Добавляем файлы прошивки в программу Odin</font></p>
+
+			<p><font size="3">Т.к наша прошивка многофайловая, то в программе выбираем:</font></p>
+
+			<p><font size="3">Файл&nbsp;<strong>PIT</strong>&nbsp;(если есть)<strong>&nbsp;</strong>в поле<strong>&nbsp;PIT&nbsp;</strong><strong>(нажать на кнопку PIT)</strong></font></p>
+
+			<p><font size="3">Файл&nbsp;<strong>APBOOT_xxxxx.tar.md5&nbsp;</strong>в поле<strong>&nbsp;Bootloader&nbsp;</strong><strong>(нажать на кнопку&nbsp;</strong><strong>Bootloader</strong>)</font></p>
+
+			<p><font size="3">Файл&nbsp;<strong>CODE_xxxxx.tar.md5&nbsp;</strong>в поле<strong>&nbsp;PDA&nbsp;</strong><strong>(нажать на кнопку PDA)</strong></font></p>
+
+			<p><font size="3">Файл&nbsp;<strong>MODEM_xxxxx.tar.md5&nbsp;</strong>в поле<strong>&nbsp;PHONE&nbsp;</strong><strong>(нажать на кнопку Phone)</strong></font></p>
+
+			<p><font size="3">Файл&nbsp;<strong>CSC_xxxxx.tar.md5&nbsp;</strong>в поле<strong>&nbsp;CSC&nbsp;</strong><strong>(нажать на кнопку CSC)</strong></font></p>
+
+			<p><img src="ANYFILS.png" /></p>
+
+			<p><font size="3">Советую в левом верхнем меню&nbsp;<font color="#ff0000">Option</font>&nbsp;ничего не менять, т.к это может повлечь за собой сбои при прошивке. Программа автоматически выставит нужные галки.</font></p>
+
+			<p><font size="3"><b><font color="#339966">6)</font></b>&nbsp;После того как выбрали файлы для прошивки, нажмите кнопку&nbsp;<strong>START&nbsp;</strong>и после чего начнется прошивка Android которая будет длится от 2-х до 5-и минут. После чего появится сообщение&nbsp;<span style="background-color: rgb(0, 204, 255);"><strong>PASS</strong></span>, прошивка установлена и смартфон перезагрузится.</font></p>
+
+			<p><img src="PASS.jpg" /></p>
+
+			<p><font size="3" color="#800080"><b>На этом прошивка закончена.&nbsp;</b></font></p>
+
+			<p><font size="3">Если после прошивки Samsung у вас происходит вечная загрузка, то необходимо&nbsp;<strong><a href="http://androidp1.ru/wipe-android/" target="_blank"><font color="red">выполнить сброс данных или так называемый WIPE</font></a></strong>.</font></p>
+		  </div>
+		</div>
+	  </div>
+	  <hr style="line-height: 1.5;" />
+
+	  <div class="spoil" style="line-height: 1.5;">
+
+		<div class="smallfont" align="center"><input type="button" style="width:300Px;height:60Px;background-color:#8b0000;color:white;" value="Возможные проблемы при прошивке" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Возможные проблемы при прошивке'; }
+			else
+			{ this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Возможные проблемы при прошивке'; }" />
+		</div>
+
+		<div class="alt2">
+
+		  <div style="display: none;">
+			<span style="color: white;"><font size="4"><font color="green"><b>1)</b> Если Odin виснет при прошивке</font></font></span>
+
+			<p><font size="3">Если при прошивке в программе ODIN появиться ошибка:</font></p>
+
+			<p style="text-align: center;">
+			</p>
+			------------
+			<div style="text-align: left;"><font size="3">&lt;ID:0/004&gt; SetupConnection..</font></div>
+			<em>
+
+			  <div style="text-align: left;"><em><strong><font size="3">&lt;ID:0/004&gt; Can&rsquo;t open the serial(COM) port.</font></strong></em></div></em>
+
+			<div style="text-align: left;"><font size="3">&lt;OSM&gt; All threads completed. (succeed 0 / failed 1)</font></div>
+			<div style="text-align: left;">------<span style="line-height: 1.5;">------</span></div>
+
+			<p></p>
+
+			<p><font size="3">Это означает, что необходимо подключить устройство в другой USB порт, либо попробовать прошить Samsung на другом компьютере.</font></p>
+
+			<p><font size="3">После данной ошибки, отключите смартфон, выключите и переведите в режим прошивки. Перезапустите Odin и подключите устройство!  Можете снова пробовать шить прошивку!</font></p>
+
+			<h2 style="text-align: left;"><font size="4"><font color="green">2) <span style="font-weight: normal;">Если Odin не хочет прошивать</span></font></font></h2>
+
+			<p><font size="3">Если Odin не прошивает и выдает подобную ошибку:</font></p>
+
+			<p style="text-align: center;">
+			</p>
+			------------
+			<div style="text-align: left;"><font size="3">Added!!</font></div>
+
+			<div style="text-align: left;"><font size="3">Enter CS for MD5..</font></div>
+
+			<div style="text-align: left;"><font size="3">Check MD5.. Do not unplug the cable..</font></div>
+
+			<div style="text-align: left;"><font size="3">Please wait..</font></div>
+			<strong>
+
+			  <div style="text-align: left;"><strong><font size="3">MD5 hash value is invalid</font></strong></div></strong>
+
+			<div style="text-align: left;"><font size="3">xxxxxxxxxxx<strong>.tar.md5 is invalid.</strong></font></div>
+			<strong>
+
+			  <div style="text-align: left;"><strong><font size="3">End&hellip;</font></strong></div></strong>------------
+			<p></p>
+
+			<p style="text-align: left;"><font size="3">Это означает что, вы скачали битый файл (недокачанный) или файл не верно подписан.</font></p>
+
+			<p style="text-align: left;"><font size="3">Стоит убедиться действительно ли файл скачан полностью, если нет, то перекачайте его. Если файл скачан полностью, удалите с файла расширение <strong>.md5</strong> и попробуйте прошить снова.</font></p>
+		  
+		     <p style="text-align: left;"><font size="3">-----------------------</font></p>
+		  
+		    <p style="text-align: left;"><font size="3">Информацию о других ошибках Вы можете найти <a title="" href="http://androidp1.ru/tipichnyie-oshibki-pri-proshivki-samsung-v-odin/" target="_blank"><font color="red">здесь</font></a></font></p>
+		 
+		  </div>
+		</div>
+	  </div>
+
+	  <hr style="line-height: 1.5;" /></font></body></html>

@@ -1,0 +1,111 @@
+<html><head>
+  <meta content="text/html; charset=utf-8">
+  <title>DualBoot</title>
+</head><body>
+<span style="line-height: 1.5;">
+<div style="text-align: center;"><big><big style="color: red;"><big><span style="font-weight: bold;">Инструкция по DUALBOOT</span></big></big></big><br>
+</div>
+<br>
+<span style="color: white;">DualBoot- это возможность установки сразу
+двух прошивок на одно
+устройство и возможность переключаться между ними в любое удобное время.</span><br style="color: white;">
+<br style="color: white;">
+<span style="color: white;">Инструкция писалась на примере установки СМ12 и почищенной стоковой
+прошивки на Samsung Galaxy S5</span><br style="color: white;">
+<br style="color: white;">
+<span style="color: white;">Поддерживаемые устройства:</span><br style="color: white;">
+<span style="color: white;">- Samsung Galaxy S4</span><br style="color: white;">
+<span style="color: white;">- Samsung Galaxy S4 Mini Duos</span><br style="color: white;">
+<span style="color: white;">- Samsung Galaxy S5</span><br style="color: white;">
+<span style="color: white;">- Samsung Galaxy S6 Edge</span><br style="color: white;">
+<span style="color: white;">- Samsung Galaxy S6</span><br style="color: white;">
+<span style="color: white;">- Samsung Galaxy Note 4</span><br style="color: white;">
+<span style="color: white;">- Samsung Galaxy Note 3</span><br style="color: white;">
+<span style="color: white;">- Samsung Galaxy Note 3 Neo</span><br style="color: white;">
+<span style="color: white;">- Samsung Galaxy Tab S 8.4 (Wifi)</span><br style="color: white;">
+<span style="color: white;">- Samsung Galaxy Tab Pro (Wifi)</span><br>
+<br>
+<big style="color: red;"><span style="font-weight: bold;">Требования:</span></big><br>
+<span style="color: white;">- Root права</span><br style="color: white;">
+<span style="color: white;">- Кастомное рекавери.</span><br>
+<br style="font-weight: bold;">
+<span style="font-weight: bold; color: white;">Внимание!!! Основной
+прошивкой CM12.1/CM12&nbsp; не ставить, получите бутлуп. Ставить только
+как вторичную.</span><br style="color: white;">
+<br style="color: white;">
+<span style="color: white;">Т.к. прошивки ставятся в раздел /system, в
+нем должно быть достаточно места для них.</span><br style="color: white;">
+<span style="color: white;">На Samsung Galaxy S5 размер раздела /system
+составляет 2,5 Гб. </span><br style="color: white;">
+<span style="color: white;">Т.к. стоковая прошивка занимает более 2 Гб,
+для реализации DUAL BOOT-а
+необходимо либо очистить ее удалив ненужное ПО или как в этом примере
+использовать легковесные прошивки на базе стока (если нужен именно сток
+конечно).</span><br>
+<br>
+<big style="font-weight: bold; color: red;">&nbsp;Приступаем!</big><br>
+<span style="color: white;"><font color=green>1)</font> Делаем бэкап!!!</span><br style="color: white;">
+<span style="color: white;"><font color=green>2)</font> Качаем последнюю версию DualBootPatcher
+(далее - DBP) отсюда - </span><a style="color: red;" href="https://snapshots.noobdev.io/">https://snapshots.noobdev.io/</a><br>
+<span style="color: white;"><font color=green>3)</font> Устанавливаем DBP (не забываем разрешить
+установку из неизвестных источников).</span><br style="color: white;">
+<span style="color: white;"><font color=green>4)</font> Отрываем DBP, в меню смотрим «Свободное
+место» (для СМ12 и XtreStoLite нужно примерно по ~800-1000Мб.</span><br style="color: white;">
+<span style="color: white;"><font color=green>5)</font> В боковом меню выбираем «Прошить Zip
+файл» (читаем как «Пропатчить Zip файл» - видать трудности перевода у
+автора проги).</span><br style="color: white;">
+<span style="color: white;"><font color=green>6)</font> В пункте «Конфигурация устройства и
+партиций» выбираем требуемый аппарат (на нашем примере это "KLTE
+(Samsung Galaxy S 5)").</span><br style="color: white;">
+<span style="color: white;">Затем ниже&nbsp; выбираем параметр, как Вы
+хотите установить прошивку (в данном случае,&nbsp; выбираем
+"Второстепенный")</span><br style="color: white;">
+<span style="color: white;"><font color=green>7)</font> Ниже выбираем заранее скачанный файл
+прошивки, которую будем ставить второй.</span><br style="color: white;">
+<span style="color: white;"><font color=green>8)</font> Остальные настройки не трогаем, нажимаем
+«Нажмите чтобы начать
+прошивку» (читаем как «… пропатчить файл прошивки»). Внизу увидите
+прогресс обработки файлов в архиве с прошивкой (займет 2-5 минут).</span><br style="color: white;">
+<span style="color: white;"><font color=green>9)</font> После успешного завершения процесса, на
+выходе получим файл прошивки в конце имени которого "_dual.zip"</span><br style="color: white;">
+<span style="font-weight: bold; color: white;">Внимание!!! Чтобы
+прошить что-либо для
+второй прошивки через recovery (др. ядро, модем и т.д.), нужно сначала
+пропатчить файлы (.zip) таким же образом. Т.е. если те же Gapps (или
+например Aroma installer) идут отдельным файлом, его тоже нужно тоже
+пропатчить перед прошивкой. </span><br style="color: white;">
+<span style="color: white;"><font color=green>10)</font> В боковом меню переходим в пункт
+«Выберите ROM», </span><br style="color: white;">
+<span style="color: white;">- видим «Главный» ROM, </span><br style="color: white;">
+<span style="color: white;">- жмем на три точки напротив него и
+выбираем «Set kernel», </span><br style="color: white;">
+<span style="color: white;">- подтверждаем и нажимаем «Продолжить»</span><br style="color: white;">
+<span style="color: white;"><font color=green>11)</font> Дальше как обычно, перезагружаемся в
+Recovery и устанавливаем полученный архив (в конце его имени будет
+"_dual.zip")</span><br style="color: white;">
+<span style="color: white;"><font color=green>12)</font> Перезагружаемся</span><br style="color: white;">
+<span style="color: white;">После этого загрузится только что
+установленная прошивка.</span><br style="color: white;">
+<span style="color: white;"><font color=green>13)</font> Устанавливаем DualBootPatcher на новой
+прошивке.</span><br style="color: white;">
+<span style="color: white;"><font color=green>14)</font> Повторяем пункт 10 для новой прошивке
+(указываем текущее ядро для только что установленного ROM-а).</span><br>
+<span style="font-style: italic; font-weight: bold; color: red;">ГОТОВО!</span><br>
+<br>
+<span style="color: white;">Для выбора прошивки:</span><br style="color: white;">
+<span style="color: white;">- открываем DualBootPatcher,</span><br style="color: white;">
+<span style="color: white;">- идем в пункт «Выберите ROM»,</span><br style="color: white;">
+<span style="color: white;">- просто нажимаем на 1 или 2 ROM,</span><br style="color: white;">
+<span style="color: white;">- перезагружаемся.</span><br style="color: white;">
+<br style="color: white;">
+<span style="font-weight: bold; color: white;">Если вдруг при выборе
+прошивки возникает ошибка</span><br style="color: white;">
+<span style="color: white;">Переключаться между прошивками можно с
+помощью DualBootUtilities:</span><br style="color: white;">
+<span style="color: white;">Скачиваем архив -</span> <a style="color: red;" href="https://snapshots.noobdev.io/DualBootUtilities-8.0.0.r2037.g0f5ab82.zip">DualBootUtilities</a>,<br>
+<span style="color: white;"><font color=green>1)</font> Прошиваем из рекавери,</span><br style="color: white;">
+<span style="color: white;"><font color=green>2)</font> В открывшемся меню выбираем нужный ROM,</span><br style="color: white;">
+<span style="color: white;"><font color=green>3)</font> Перезагружаемся.</span><br>
+<br>
+</span>
+</body></html>

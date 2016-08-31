@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+  </head>
+  <body><span style="line-height: 1.5;"><font color=white><center><strong><font color="red" size="5">Смена анимации загрузки</font></strong></center>
+		
+		<div><font size="3"><br /></font></div>
+		<div><b><font size="3"><font color="#ff0000">* </font><font color="red">ПРИМЕЧАНИЕ</font><font color="#ff0000">: </font><font color="red">ЕСЛИ У ВАС В ПАПКЕ SYSTEM/MEDIA НЕТ ФАЙЛА BOOTANIMATION.ZIP, А ЕСТЬ ФАЙЛ С РАЗРЕШЕНИЕМ QMG, ТО ЕГО НУЖНО ПЕРЕДЕЛАТЬ В ZIP. КАК ЭТО СДЕЛАТЬ ВЫ МОЖЕТЕ ПОСМОТРЕТЬ НИЖЕ В СООТВЕТСТВУЮЩЕЙ ИНСТРУКЦИИ!</font></font></b></div>
+		<div><span style="font-size: medium;"><br /></span></div>
+		<div><span style="font-size: medium;"><font color="#339966"><b>Требования для смены анимации загрузки:</b></font></span></div>
+		<div>
+		  <ul>
+			<li><font size="3">Наличие Root прав</font></li>
+			<li><font size="3">Наличие файла анимации в формате ZIP в папке system/media либо data/local. (Если формат qmg, то читайте соответствующую инструкцию по смене формата на ZIP ниже)</font></li></ul>
+		  <div><font size="3" color="#339966"><b>Процесс замены бутанимации:</b></font></div></div>
+		<div><font size="3">1) Скачайте бутанимацию в формате ZIP для Вашего смартфона</font></div>
+		<div><font size="3">2) Переименуйте скачанный архив zip с бутанимацией в bootanimation.zip</font></div>
+		<div><font size="3">3) Скачиваем любой файловый менеджер, который работает с ROOT</font></div>
+		<div><font size="3">4) Копируем скачанную бутанимацию из п.1,2 в папку system-&gt;media или data-&gt; local и соглашаемся на замену</font></div>
+		<div><font size="3">5) Ставим файлу bootanimation.zip разрешения rw-r--r-- и владельца-группу root-root</font></div>
+		<div><font size="3">6) Перезагружаемся!</font></div>
+		<div><br /></div>
+		<div><b style="font-family: Verdana, Tahoma, Arial, 'Trebuchet MS', sans-serif, Georgia, Courier, 'Times New Roman', serif; line-height: 13.333333015441895px;"><font color="#ff00ff" size="4">Инструкция по смене формата анимации с qmg на zip</font></b></div>
+		<div><b style="font-family: Verdana, Tahoma, Arial, 'Trebuchet MS', sans-serif, Georgia, Courier, 'Times New Roman', serif; line-height: 13.333333015441895px;"><font color="#ff00ff" size="4"><br /></font></b></div>
+		<div>
+		  <div><b><font color="#339966" size="3">Требования:</font></b></div>
+		  <div>
+			<ul>
+			  <li><span style="font-size: medium;">Права Root-пользователя</span></li>
+			  <li><span style="font-size: medium;">Любой файловый менеджер работающий с рут правами</span></li></ul>
+			<div><font size="3" color="#339966"><b>Сменяем формат:</b></font></div></div>
+		  <div><font size="3">1) Качаем анимацию в zip для вашего разрешения экрана</font></div>
+		  <div><font size="3">2) Кидаем её в system/media либо data/local</font></div>
+		  <div><font size="3">(Если её названия не bootanimation, то пишем bootanimation.zip )</font></div>
+		  <div><font size="3">3) Заходим в папку system/bin&nbsp;</font></div>
+		  <div><font size="3">4) Делаем резервную копию файла samsungani (как вариант переименовать в samsungani.bak)</font></div>
+		  <div><font size="3">5) Удаляем файл system/bin/samsungani (если вы его не переименовали)</font></div>
+		  <div><font size="3">6) Находим файл system/bin/bootanimation и называем его samsungani</font></div>
+		  <div><font size="3">7) Удаляем два файла с форматом qmg из System/media</font></div>
+		  <div><font size="3">8) Перезагружаемся</font></div></div></font></span></body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+	<meta charset="UTF-8">
+
+  </head>
+
+  <body><span style="line-height: 1.5;"><font color=white><h4 style="line-height: 1.5; text-align: center;"><font color="#ff0000" size="5">Прошивка кастомного/стокового ядра</font></h4>
+
+		<div><font style="line-height: 1.5;"><b><font color="red" size="4">Ядро (Kernel)</font></b><font size="3">-</font></font><font color="#252525" face="Helvetica, Arial, sans-serif"><span style="font-size: 14px; line-height: 22.399999618530273px;">&nbsp;</span></font><font size="3">центральная часть операционной системы (ОС), обеспечивающая приложениям координированный доступ к ресурсам смартфона, таким как процессорное время, память т.п. Оно управляет всем оборудованием смартфона (Процессор, память, файловая система и т.п), обеспечивает скоординированную работу всех внутренних и внешних устройств.&nbsp;</font></div>
+		<div style="text-align: center;"><font color="#ff00ff" size="4"><b>Функции любого ядра Android:</b></font></div>
+		<p><div style="text-align: center;"><font size="3"><img src="kernel.png"></font></div></p>
+
+		<div><font style="line-height: 1.5;"><font color="red" size="4"><b>Стоковое ядро</b></font><font size="3">-</font></font><font size="3">&nbsp;это ядро которое оптимизировано производителем для данного устройства, обычно очень урезано в функционале и&nbsp;</font><span style="font-size: medium;">заблокировано от вмешательства пользователей.</span></div>
+		<div><font color="red" size="4" style="font-weight: bold;">Кастомное ядро</font><font size="3">- ядро, выпускаемое независимыми разработчиками, обычно основывается на более новой версии ядра Linux.</font></div>
+		<div><font size="3">Также имеет свои преимущества над стоковым ядром, например:</font></div>
+		<div><font size="3">
+			<div>
+			  <ul>
+				<li>Изменение частоты процессора в широких пределах;</li>
+				<li>Разгон графической подсистемы (GPU);</li>
+				<li>Снижение частоты и напряжения питания процессора, что позволяет достичь более длительного времени работы от батареи;</li>
+				<li>Более свежие и качественные драйверы,</li>
+				<li>Широкие возможности по настройки и конфигурации звука и цвета экрана;</li>
+				<li>Поддержка альтернативных файловых систем.</li></ul></div></font></div>
+		<div style="line-height: 1.5;">
+		  <div>
+
+			<div><font size="3">В данной инструкции Мы научимся прошивать кастомные ядра на устройства Samsung!</font></div></div></div>
+	<div><font size="4" color="red"><b>Уважаемые пользователи! Перед всеми манипуляциями с устройством, необходимо сначала отключить блокировку повторной активации. Для этого, нужно зайти в «Настройки» — «Безопасность» и снять галочку с пункта «Блокировка повторной активации» </b></font></div>
+		<hr style="line-height: 1.5;" />
+
+		<div class="spoil" style="line-height: 1.5;">
+
+		  <div class="smallfont" align="center"><input type="button" style="width:300Px;height:55Px;background-color:#8b0000;color:white;" value="Прошивка через Odin" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Прошивка через Odin'; }
+			  else
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Прошивка через Odin'; }" />
+		  </div>
+
+		  <div class="alt2">
+
+			<div style="display: none;">
+
+			  <div><font color="#ff0000" size="3"><b>ПОСЛЕ ПРИМЕНЕНИЯ НИЖЕСЛЕДУЮЩИХ ПУНКТОВ ГАРАНТИЯ НА УСТРОЙСТВО АННУЛИРУЕТСЯ!!!&nbsp;&nbsp;</b></font></div>
+			   <div><font color="#ff0000" size="3"><b>Также, должна быть отключена блокировка активации на телефоне, и на компьютере остановлен КИЕС и выгружены антивирусы и файрволы&nbsp;&nbsp;</b></font></div>
+
+			  <div><font size="3"><b><font color="#339966">1)</font></b> Скачиваем файл кастомного ядра <b>в формате tar или tar.md5.&nbsp;</b></font></div>
+
+			  <div><font size="3"><b><font color="#339966">2)</font></b> Скачиваем <font color="#ff6600"><a href="https://yadi.sk/d/IOdc4mJpi5nxP"><font color="red">Odin</font></a>&nbsp;</font>и разархивируем его в отдельную папку в диске C:/</font></div>
+
+			  <div><font size="3"><b><font color="#339966">3)</font></b>&nbsp;Выключаем телефон.&nbsp;</font></div><font size="3"><b><font color="#339966">4)</font></b> Заходим в режим Download (Зажимаем 3 кнопки: Громкость вниз + домой + питание). Подтверждаем, что желаем прошить кастомную прошивку кнопкой "Громкость вверх".<br /><b><font color="#339966">5)</font></b> Подключаем аппарат к компьютеру&nbsp;<br /><b><font color="#339966">6)</font></b> Запускаем Odin (П.2)<br /><b><font color="#339966">7)</font></b> В строке PDA указываем файл кастомного ядра, который мы собираемся прошивать.&nbsp;<font color="#ff0000">В ОКНЕ OPTION НИЧЕГО НЕ МЕНЯЕМ!</font><br /><b><font color="#339966">8)</font></b> Нажимаем кнопку Start и ждем окончания прошивки кастомного ядра. После окончания телефон перезагрузится!</font>
+
+			  <div><font size="3"><br /></font></div>
+
+			  <div><font size="3">Кастомное ядро успешно прошито. О том, как сбросить счетчик прошивок и убрать желтый треугольник- читаем в других инструкциях в программе.</font></div>
+			</div>
+		  </div>
+		</div>
+
+		<hr style="line-height: 1.5;" />
+
+		<div class="spoil" style="line-height: 1.5;">
+
+		  <div class="smallfont" align="center"><input type="button" style="width:300Px;height:55Px;background-color:#8b0000;color:white;" value="Прошивка через кастомное рекавери" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Прошивка через кастомное рекавери'; }
+			  else
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Прошивка через кастомное рекавери'; }" />
+		  </div>
+
+		  <div class="alt2">
+
+			<div style="display: none;">
+
+			  <div><font size="3">Данный способ подходит для установки кастомного ядра, которое запаковано в ZIP независимыми разработчиками.</font></div>
+
+			  <div><font size="3"><b><font color="red">ПОСЛЕ ПРИМЕНЕНИЯ НИЖЕСЛЕДУЮЩИХ ПУНКТОВ ГАРАНТИЯ НА УСТРОЙСТВО АННУЛИРУЕТСЯ!!!</font></b> </font></div>
+
+			  <div><font size="3"><br /></font></div>
+
+			  <div>
+
+				<div><font size="3" color="#ff0000"><b>Требования:</b></font></div>
+
+				<div><font size="3">1) Наличие Root прав</font></div>
+
+				<div><font size="3">2) Установленное кастомное рекавери CWM или TWRP</font></div></div>
+
+			  <div><font size="3"><br /></font></div>
+
+			  <div><font size="3" color="#ff0000"><b>Сам процесс..</b></font></div>
+
+			  <div><font size="3"><b><font color="#339966">1)</font></b> Скачиваем файл кастомного ядра в формате zip</font></div>
+
+			  <div><font size="3"><b><font color="#339966">2)</font></b> Копируем файл *.zip с кастомным ядром или во внутреннюю память, или на карту памяти.&nbsp;<br /><b><font color="#339966">3)</font></b> Выключаем телефон.&nbsp;<br /><b><font color="#339966">4)</font></b> Заходим в кастомное рекавери, которое у Вас установлено (Зажимаем три кнопки - громкость вверх + домой + питание).&nbsp;<br /><b><font color="#339966">5)</font></b> Выбираем пункт "Install zip from sdcard"- если у Вас рекавери CWM (Если TWRP- выбираем Install).&nbsp;<br /><b><font color="#339966">6)</font></b> В открывшемся диалоге выбираем, из какого типа памяти мы будем устанавливать кастомное ядро - из внешней (sdcard) или внутренней (internal sdcard).&nbsp;<br /><b><font color="#339966">7)</font></b> Находим и выбираем архив с кастомным ядром.&nbsp;<br /><b><font color="#339966">8)</font></b> Ждем завершения установки, после окончания установки перезагружаем телефон.&nbsp;</font></div>
+			</div>
+		  </div>
+		</div>
+		<hr style="line-height: 1.5;" />
+
+		<div class="spoil">
+
+		  <div class="smallfont" align="center" style="line-height: 1.5;"><input type="button" style="width:300Px;height:55Px;background-color:#8b0000;color:white;" value="Прошивка через Mobile Odin" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Прошивка через Mobile Odin'; }
+			  else
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Прошивка через Mobile Odin'; }" />
+		  </div>
+
+		  <div class="alt2">
+
+			<div style="display: none;">
+
+			  <div style="line-height: 1.5;"><font size="3">Так же вы можете прошить ядро в формате tar или в формате zImage через Mobile Odin.</font></div>
+
+			  <div style="line-height: 1.5;"><font size="3"><br /></font></div>
+
+			  <div>
+
+				<div style="line-height: 1.5;"><font size="3"><font color="#339966"><b>1)</b></font>&nbsp;Скачиваем кастомное ядро (Формат файла ядра- .tar или .tar.md5), возможен незапакованный вид-&nbsp;</font><span style="font-size: medium; line-height: 24px;">zImage</span><span style="line-height: 1.5;">)</span></div>
+				<div style="line-height: 1.5;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">2</span><span style="font-weight: bold; color: rgb(0, 153, 0);">)</span>&nbsp;Закидываем на телефон файл ядра</font></div>
+				<div style="line-height: 1.5;"><font size="3">(Положим данный файл в корневую директорию накопителя или карты памяти)</font></div>
+
+				<div style="line-height: 1.5;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">3)</span>&nbsp;Скачиваем и устанавливаем программу&nbsp;<a href="https://play.google.com/store/apps/details?id=eu.chainfire.mobileodin.pro" target=""><font color="red">Mobile Odin Pro</font></a>&nbsp;</font></div>
+
+				<div style="line-height: 1.5;"><font size="3">После открытия программы, она доустанавливает еще одно .apk в зависимости от вашего устройства.<br />Если у вас не скачивается дополнительный файл, установите его вручную, версию для вашего девайса брать на XDA.</font></div>
+
+				<div style="line-height: 1.5;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">3)</span>&nbsp;Открываем Mobile Odin Pro&nbsp;</font></div>
+
+				<div style="line-height: 1.5;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">4)</span>&nbsp;В Mobile Odin Pro выбираем пункт Open file ...</font></div>
+
+				<div style="line-height: 1.5;"><font size="3"><span style="line-height: 24px;">
+
+					  <p><img src="Open.png" /></p>
+					</span></font><font size="3"><span style="line-height: 24px;"><span style="font-weight: bold; color: rgb(0, 153, 0);">5)</span>&nbsp;Выбираем тип памяти, из которого программа будет считывать наш файл кастомного ядра (Выбираем тот тип памяти, куда заливали файл кастомного ядра в П.2).</span></font></div>
+
+				<div style="line-height: 1.5;"><font size="3"><span style="line-height: 24px;">
+
+					  <p><img src="Memory.png" /></p>
+					</span></font></div>
+
+				<div><font size="3"><span style="line-height: 1.5; font-weight: bold; color: rgb(0, 153, 0);">6)</span><span style="line-height: 1.5;">&nbsp;В появившемся окне находим и выбираем ранее записанный файл кастомного ядра формата .tar или .tar.md5 или&nbsp;</span><span style="line-height: 24px;">не запакованный</span><span style="line-height: 1.5;">&nbsp; файл ядра zImage (Который мы записывали в корневую директорию карты памяти\накопителя в пункте 2. Его содержимое подставляется в соответствующие разделы программы )</span></font></div>
+
+				<div style="line-height: 1.5;"><font size="3">
+
+					<p><img src="OKF.png" /></p>
+				  </font></div>
+
+				<div style="line-height: 1.5;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">7)</span>&nbsp;Нажимаем клавишу подтверждения "ОК".</font></div>
+
+				<div style="line-height: 1.5;"><font size="3">
+
+					<p><img src="PART.png" /></p>
+				  </font></div>
+
+				<div style="line-height: 1.5;"><font size="3"><span style="font-weight: bold; color: rgb(0, 153, 0);">8)</span>&nbsp;Проверяем,&nbsp;во всех ли разделах есть данные</font>.</div></div>
+
+			  <div style="line-height: 1.5;"><b style="color: rgb(51, 153, 102); line-height: 1.5;"><font size="3">9)</font></b><span style="color: rgb(51, 153, 102); line-height: 1.5;">&nbsp;</span><font size="3"><span style="line-height: 24px;">Нажимаем кнопку Flash firmware и ждем...</span></font></div>
+			</div>
+		  </div>
+		</div>
+		<hr style="line-height: 1.5;" />
+
+		<div class="spoil" style="line-height: 1.5;">
+
+		  <div class="smallfont" align="center"><input type="button" style="width:300Px;height:55Px;background-color:#8b0000;color:white;" value="Другие способы прошивки" class="input-button" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerText = ''; this.value = 'Другие способы прошивки'; }
+			  else
+			  { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerText = ''; this.value = 'Другие способы прошивки'; }" />
+		  </div>
+
+		  <div class="alt2">
+
+			<div style="display: none;">
+
+			  <div style="font-family: 'Trebuchet MS';"><font size="3"><span style="line-height: 24px;"><font color="#ff00ff">1)</font> Если файл кастомного ядра находится в формате tar или zImage, мы сможем прошить данное ядро через CWM Manager</span></font></div>
+			</div>
+		  </div>
+		</div>
+		<hr style="line-height: 1.5;" /></font></span></body>
+</html>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name1">CSP PRO</string>
+    <string name="app_name">Custom SGPhone PRO</string>
+    <string-array name="Menu_Titles">
+        <item>Инструкции</item>
+        <item>Соглашение</item>
+        <item>Связаться с разработчиком</item>
+        <item>Полезные ссылки</item>
+		<item>Благодарности</item>
+        <item>О программе</item>
+    </string-array>
+    <string-array name="Menu_imageForTitles">
+        <item>home</item>
+        <item>warning</item>
+        <item>mail</item>
+        <item>useful</item>
+	    <item>star</item>
+        <item>info</item>
+    </string-array>
+    <string-array name="List_Titles">
+        <item>Вступление для новичков</item>
+        <item>Термины и понятия</item>
+        <item>Прошивка кастомного рекавери</item>
+        <item>О кастомном рекавери</item>
+        <item>Получение Root прав</item>
+		<item>Резервируем раздел EFS</item>
+        <item>Перепрошивка через Odin</item>
+		<item>Перепрошивка через Mobile Odin</item>
+		<item>Перепрошивка через Samsung Kies</item>
+		<item>Перепрошивка через FlashFire</item>
+		<item>Перепрошивка через кастомное рекавери</item>
+		<item>Отвязка устройства от оператора (Sim Unlock)</item>
+		<item>Русификация устройства (Root)</item>
+		<item>Прошивка кастомного/стокового ядра</item>
+		<item>Описание режимов процессора и планировщиков</item>
+		<item>Сброс счетчика кастомных прошивок (KNOX 1.0)</item>
+		<item>Сервисные коды</item>
+		<item>Коды регионов и их расшифровка</item>
+		<item>Смена региона (ROOT)</item>
+		<item>Смена анимации загрузки устройства</item>
+		<item>Калибровка батареи</item>
+		<item>Описание назначения всех системных приложений</item>
+		<item>Возвращение девайса до заводского состояния</item>
+		<item>Восстановление IMEI</item>
+		<item>Ускорение поиска спутников GPS</item>
+		<item>Установка Adobe Flash Player (Android 2.X-4.4+)</item>
+	    <item>Смена шрифта</item>
+		<item>Деодексирование/одексирование прошивки</item>
+		<item>Распаковка/упаковка стоковых прошивок</item>
+		<item>Делаем аналог РСТ из не РСТ</item>
+		<item>Настраиваем чтение и запись на карту памяти SD</item>
+		<item>Прошиваем ядро/рекавери без использования ПК.\nСпециализированная программа!</item>
+		<item>Как отличить оригинал устройства от копии</item>
+		<item>Замена системных файлов.\nЗнакомство с структурой файловой системы Android</item>
+		<item>Отключаем сервисы KNOX</item>
+		<item>KNOX и гарантия</item>
+		<item>Обновляемся по воздуху с Root правами</item>
+		<item>Знакомство с Xposed Installer</item>
+		<item>Инструкция по DualBoot</item>
+		<item>Как извлечь прошивку из Samsung Smart Switch</item>
+		<item>Решение проблемы с утечкой памяти на Android 5.0</item>
+		<item>Установка Xposed \nНа прошивки Android 5.0.X/5.1.1/6.0.X</item>
+		<item>Обход блокировки повторной активации\nНа примере Galaxy S5</item>
+		<item>Советы по улучшению энергосбережения</item>
+		<item>Установка прошивки от одной региональной \nмодели устройства на другую\nНапример, установка прошивки от G900F на G900V</item>
+		</string-array>
+</resources>
